@@ -1,0 +1,623 @@
+/**
+ * CONTENTS
+ *
+ * FONTS
+ * Fonts..................Font files.
+ *
+ * RESET
+ * Andy Bell Reset........Reset by Andy Bell.
+ * + Reset........More reset.
+ *
+ * BASELINE GRID
+ * Headings...............H1–H6 styles.
+ * P......................P styles.
+ *
+ * UTILITY CLASSES
+ * Utility classes........Helpers classes.
+ */
+
+
+
+
+
+/*******************
+ #FONTS
+*******************/
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: optional; /* hide text for up to 100ms, then only use the web font if it is available - never swapping */
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/Source_Sans_Pro/SourceSansPro-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-display: swap; /* show text as soon as possible, and always swap in the web font when it loads */
+}
+
+
+
+
+
+/*******************
+ #RESET
+*******************/
+
+/*
+https://piccalil.li/blog/a-modern-css-reset/
+License: MIT
+Copyright (c) 2019 Andy Bell and other contributors
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul, ol {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img, picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: .01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: .01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* More Reset */
+body {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    color: var(--color-text-secondary);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+}
+
+
+
+
+
+/*******************
+ #BASELINE GRID
+*******************/
+
+h1 {
+    font-size: 3em; /* 48 / 16 */
+    line-height: 1.333333333333333em; /* 48 / 36 */
+    margin-bottom: .5em; /* 24 / 48 */
+}
+
+h2 {
+    font-size: 2.25em; /* 36 / 16 */
+    line-height: 1.333333333333333em; /* 48 / 36 */
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.5em; /* 24 / 16 */
+    line-height: 1em; /* 24 / 24 */
+    margin-bottom: 1em; /* 24 / 24 */
+}
+
+h4 {
+    font-size: 1.3125em; /* 21 / 16 */
+    line-height: 1.142857142857143em; /* 24 / 21 */
+    margin-bottom: 1.142857142857143em; /* 24 / 21 */
+}
+
+h5 {
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.333333333333333em; /* 24 / 18 */
+    margin-bottom: 1.333333333333333em; /* 24 / 18 */
+}
+
+h6 {
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
+}
+
+p {
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
+}
+
+
+
+
+
+
+/*******************
+ #UTILITY CLASSES
+*******************/
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.text-alig-l {
+    text-align: left;
+}
+
+.text-alig-c {
+    text-align: center;
+}
+
+.text-alig-r {
+    text-align: right;
+}
+
+.block-cent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.l-wrap {
+    max-width: 1024px; /* 64em */
+    /*
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    */
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-colu {
+    flex-direction: column;
+}
+
+.flex-cent {
+    justify-content: center;
+    align-items: center;
+}
+
+.alig-cent {
+    align-items: center;
+}
+
+.alig-start {
+    align-items: flex-start;
+}
+
+.alig-end {
+    align-items: flex-end;
+}
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+
+.just-cent {
+    justify-content: center;
+}
+
+.just-betw {
+    justify-content: space-between;
+}
+
+.canc-even {
+    pointer-events: none;
+}
+
+/* Visible: no, accessible: no */
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+/* Visible: no, accessible: yes */
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col, .col-0-5, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-auto {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-0-5 {
+    width: 6.25%;
+}
+
+.col-1 {
+    width: 12.5%;
+}
+
+.col-2 {
+    width: 25%;
+}
+
+.col-3 {
+    width: 37.5%
+}
+
+.col-3-5 {
+    width: 43.75%;
+}
+
+.col-4 {
+    width: 50%;
+}
+
+.col-4-5 {
+    width: 56.25%;
+}
+
+.col-5 {
+    width: 62.5%;
+}
+
+.col-6 {
+    width: 75%;
+}
+
+.col-7 {
+    width: 87.5%;
+}
+
+.col-8 {
+    width: 100%;
+}
+
+.col-auto {
+    width: auto;
+    max-width: 100%;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.no-paddings {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 48em) {
+    .text-alig-md-l {
+        text-align: left;
+    }
+
+    .text-alig-md-c {
+        text-align: center;
+    }
+
+    .text-alig-md-r {
+        text-align: right;
+    }
+
+    .alig-md-cent {
+        align-items: center;
+    }
+
+    .alig-md-star {
+        align-items: flex-start;
+    }
+
+    .alig-md-end {
+        align-items: flex-end;
+    }
+
+    .just-md-star {
+        justify-content: flex-start;
+    }
+
+    .just-md-end {
+        justify-content: flex-end;
+    }
+
+    .just-md-cent {
+        justify-content: center;
+    }
+
+    .just-md-betw {
+        justify-content: space-between;
+    }
+
+    .col-md-0-5 {
+        width: 6.25%;
+    }
+
+    .col-md-1 {
+        width: 12.5%;
+    }
+
+    .col-md-2 {
+        width: 25%;
+    }
+
+    .col-md-3 {
+        width: 37.5%
+    }
+
+    .col-md-4 {
+        width: 50%;
+    }
+
+    .col-md-4-5 {
+        width: 56.25%;
+    }
+
+    .col-md-5 {
+        width: 62.5%;
+    }
+
+    .col-md-6 {
+        width: 75%;
+    }
+
+    .col-md-7 {
+        width: 87.5%;
+    }
+
+    .col-md-8 {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 62em) {
+    .text-alig-lg-l {
+        text-align: left;
+    }
+
+    .text-alig-lg-c {
+        text-align: center;
+    }
+
+    .text-alig-lg-r {
+        text-align: right;
+    }
+
+    .alig-lg-cent {
+        align-items: center;
+    }
+
+    .alig-lg-star {
+        align-items: flex-start;
+    }
+
+    .alig-lg-end {
+        align-items: flex-end;
+    }
+
+    .just-lg-star {
+        justify-content: flex-start;
+    }
+
+    .just-lg-end {
+        justify-content: flex-end;
+    }
+
+    .just-lg-cent {
+        justify-content: center;
+    }
+
+    .just-lg-betw {
+        justify-content: space-between;
+    }
+
+    .col-lg-0-5 {
+        width: 6.25%;
+    }
+
+    .col-lg-1 {
+        width: 12.5%;
+    }
+
+    .col-lg-2 {
+        width: 25%;
+    }
+
+    .col-lg-3 {
+        width: 37.5%
+    }
+
+    .col-lg-4 {
+        width: 50%;
+    }
+
+    .col-lg-4-5 {
+        width: 56.25%;
+    }
+
+    .col-lg-5 {
+        width: 62.5%;
+    }
+
+    .col-lg-6 {
+        width: 75%;
+    }
+
+    .col-lg-7 {
+        width: 87.5%;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 75em) {
+    .text-alig-xl-l {
+        text-align: left;
+    }
+
+    .text-alig-xl-c {
+        text-align: center;
+    }
+
+    .text-alig-xl-r {
+        text-align: right;
+    }
+
+    .alig-xl-cent {
+        align-items: center;
+    }
+
+    .alig-xl-star {
+        align-items: flex-start;
+    }
+
+    .alig-xl-end {
+        align-items: flex-end;
+    }
+
+    .just-xl-star {
+        justify-content: flex-start;
+    }
+
+    .just-xl-end {
+        justify-content: flex-end;
+    }
+
+    .just-xl-cent {
+        justify-content: center;
+    }
+
+    .just-xl-betw {
+        justify-content: space-between;
+    }
+
+    .col-xl-0-5 {
+        width: 6.25%;
+    }
+
+    .col-xl-1 {
+        width: 12.5%;
+    }
+
+    .col-xl-2 {
+        width: 25%;
+    }
+
+    .col-xl-3 {
+        width: 37.5%
+    }
+
+    .col-xl-4 {
+        width: 50%;
+    }
+
+    .col-xl-4-5 {
+        width: 56.25%;
+    }
+
+    .col-xl-5 {
+        width: 62.5%;
+    }
+
+    .col-xl-6 {
+        width: 75%;
+    }
+
+    .col-xl-7 {
+        width: 87.5%;
+    }
+
+    .col-xl-8 {
+        width: 100%;
+    }
+}

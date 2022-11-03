@@ -1,0 +1,386 @@
+/**
+ * CONTENTS
+ *
+ * MEDIA QUERY
+ * @media (min-width: 768px).....Medium devices.
+ * @media (min-width: 992px).....Large devices.
+ * @media (min-width: 1200px)....Extra large devices.
+ * @media print..................Print styles.
+ */
+
+
+
+
+
+.main-header {
+    background-color: var(--color-secondary);
+    /* header sticky */
+    /*
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    */
+    padding: 12px;
+}
+
+.logo {
+    display: block;
+    width: 110px;
+    height: auto;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    color: var(--color-text-primary);
+    display: block;
+    font-weight: 700;
+    font-size: 18px; /* 1.125rem */
+    margin: 0 24px;
+    position: relative;
+    z-index: 0;
+    transition: all .275s;
+}
+
+.main-nav a:hover {
+    background-color: var(--color-background);
+}
+
+.main-nav .btn a {
+    border: 2px solid var(--color-text-primary);
+    border-radius: 8px;
+    padding: 0 0.8em;
+    z-index: 1;
+}
+
+.main-nav .btn a:hover {
+    /*
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    */
+    background-color: var(--color-background);
+}
+
+.about {
+    padding: 52px 32px 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.about .grid {
+    gap: 24px 24px;
+    grid-template-columns: 3fr 4fr;
+}
+
+.insta svg {
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 4px;
+}
+
+.about .photo {
+    align-self: stretch;
+    justify-self: center;
+    width: 100%;
+}
+
+.about .photo img {
+    /*
+    width: 340px;
+    height: 340px;
+    */
+    clip-path: circle(50%);
+}
+
+.about .intro {
+    color: var(--color-text-primary);
+    align-self: center;
+}
+
+.about .intro h1 {
+    font-size: 1.875em;
+}
+
+.about .intro p {
+    font-size: 1.1em;    
+}
+
+.about .intro a {
+    transition: all .275s;
+}
+
+.about .intro a:hover {
+    background-color: var(--color-secondary);
+}
+
+.about .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    grid-column-start: span 2;
+}
+
+.about .description .long {
+    display: none;
+}
+
+.about .description ul {
+    list-style-image: url(../img/naranja.svg);
+}
+
+.about .btn {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 0.8em;
+}
+
+.about .btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.separator {
+    background-image: url(../img/naranja.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 52px;
+    margin: 4em auto;
+    position: relative;
+}
+
+.online {
+    padding: 52px 32px 0;
+}
+
+.online .title {
+    color: var(--color-text-primary);
+    text-align: center;
+}
+
+.online .card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .5px solid var(--color-text-primary);
+    border-radius: 16px;
+}
+
+.online .card + .card {
+    margin-top: 83px;
+}
+
+.quantity {
+    font-size: 36px;
+    line-height: 1;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: 12px;
+}
+
+.money {
+    font-size: 56px;
+    line-height: 0;
+    font-feature-settings: "pnum";
+}
+
+.divider {
+    display: inline-block;
+    transform: rotate(23deg);
+    border-left: 1px solid var(--color-text-primary);
+    height: 33px;
+    margin: 0px 8px;
+    vertical-align: 2px;
+}
+
+.time {
+    text-align: left;
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: 14px;
+}
+
+.online .img {
+    margin: 32px 24px 40px;
+    display: flex;
+    height: 300px;
+}
+
+.online .img img {
+    max-height: 100%;
+    margin: 0px auto;
+    object-fit: contain;
+}
+
+.online .line {
+    border-width: 0px 0px .5px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    height: 0px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-text-primary);
+    margin: 32px 0px;
+}
+
+.online .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.work {
+    padding: 52px 32px;
+}
+
+.work .title {
+    color: var(--color-text-primary);
+}
+
+.work article {
+    margin-top: 1rem;
+}
+
+.work article h3 {
+    margin-bottom: .5em;
+}
+
+.work article p {
+    margin-bottom: 2.5em;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.main-footer {
+    background-color: var(--color-secondary);
+    color: var(--color-text-primary);
+    padding: 65px 16px;
+}
+
+.contact {
+    padding: 52px 32px;
+}
+
+.contact p {
+    margin-bottom: 0em;
+    font-size: 22px;
+}
+
+.contact a {
+    transition: all .275s;
+}
+
+.contact a:hover {
+    background-color: var(--color-background);
+}
+
+.contact .claim {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.copyright-footer {
+    background-color: var(--color-secondary);
+    color: var(--color-text-primary);
+    padding: 14px 16px;
+    border-top: .25px solid var(--color-text-primary);
+}
+
+.copyright-footer p {
+    margin-bottom: 0;
+}
+
+.is-overlined {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.is-overlined::before {
+    background: var(--color-secondary);
+    bottom: 0.25em;
+    content: "";
+    height: 0.4em;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    transform: scale(1) skew(-8deg);
+    z-index: -1;
+}
+
+
+
+
+/*******************
+ #MEDIA QUERY
+*******************/
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 48em) {
+    .about .grid {
+        gap: 24px 40px;
+        grid-template-columns: 3fr 5fr;
+    }
+
+    .about .photo {
+        grid-row-start: span 2;
+    }
+
+    .about .intro {
+        align-self: start;
+    }
+
+    .about .intro h1 {
+        font-size: 3em;
+    }
+
+    .about .description {
+        grid-column-start: 2;
+    }
+
+    .online .grid {
+        gap: 24px 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .online .title {
+        grid-column-start: span 2;
+        justify-self: center;
+    }
+
+    .online .card + .card {
+        margin-top: 0;
+    }
+
+    .work .grid {
+        grid-template-columns: 3fr 5fr;
+        column-gap: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 62em) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 75em) {
+
+}
+
+/* Print styles*/
+@media print {
+}
