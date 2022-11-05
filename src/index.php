@@ -1,10 +1,17 @@
 <?php
-  include('template-parts/head.php');
+$test = true; // a true para modo pruebas
+include('template-parts/head.php');
+if ($test):
+  include('template-parts/beta.php');
+else:
   include('template-parts/header.php');
   include('template-parts/main.php');
   include('template-parts/footer.php');
+endif;
 ?>
 <script>
+if (<?php echo(not($test)); ?>) {
+
   // Comportamiento btn 'Saber más'
   function displayMore() {
     let btn = document.getElementById('myBtn');
@@ -24,6 +31,7 @@
   let year = new Date();
   document.getElementById('year').innerHTML = year.getFullYear();
 
+}
 </script>
 <?php
   include('template-parts/foot.php');

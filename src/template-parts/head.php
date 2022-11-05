@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no"/>
 
+
   <link rel="icon" href="favicon.ico" sizes="any"><!-- 32×32 -->
   <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png"><!-- 180×180 -->
@@ -23,5 +24,7 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- endbuild -->
   <meta name="theme-color" content="#3D182F">
+
+  <link rel="canonical" href="https://www.inesmorannutricion.com">
 </head>
 <body>
