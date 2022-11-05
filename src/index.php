@@ -10,8 +10,6 @@ else:
 endif;
 ?>
 <script>
-if (<?php echo(not($test)); ?>) {
-
   // Comportamiento btn 'Saber más'
   function displayMore() {
     let btn = document.getElementById('myBtn');
@@ -28,10 +26,8 @@ if (<?php echo(not($test)); ?>) {
   }
 
   // Actualizar year copyright
-  let year = new Date();
-  document.getElementById('year').innerHTML = year.getFullYear();
-
-}
+//  let year = new Date();
+//  document.getElementById('year').innerHTML = year.getFullYear();
 </script>
 <?php
   include('template-parts/foot.php');
