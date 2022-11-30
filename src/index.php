@@ -1,13 +1,8 @@
 <?php
-$test = true; // a true para modo pruebas
-include('template-parts/head.php');
-if ($test):
-  include('template-parts/beta.php');
-else:
+  include('template-parts/head.php');
   include('template-parts/header.php');
   include('template-parts/main.php');
   include('template-parts/footer.php');
-endif;
 ?>
 <script>
   // Comportamiento btn 'Saber más'
@@ -26,8 +21,8 @@ endif;
   }
 
   // Actualizar year copyright
-//  let year = new Date();
-//  document.getElementById('year').innerHTML = year.getFullYear();
+  let year = new Date();
+  document.getElementById('year').innerHTML = year.getFullYear();
 </script>
 <?php
   include('template-parts/foot.php');
