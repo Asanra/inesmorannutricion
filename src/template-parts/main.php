@@ -2,13 +2,13 @@
     <section id="sobre-mi" class="l-wrap about">
         <div class="grid">
             <div class="photo">
-                <img src="img/photo.jpg">
+                <img src="img/2.jpeg">
             </div>
             <div class="intro">
                 <h1>
                     Inés Morán
                     <br>
-                    Dietista - <span class="is-overlined">Nutricionista</span>
+                    Dietista - Nutricionista
                 </h1>
                 <p>
                     <a href="https://www.instagram.com/inesmoran.nutricion/" class="insta">
@@ -23,21 +23,16 @@
                     </a>
                 </p>
             </div>
-            <!--
             <div class="description">
-                <p>Hola, mi nombre es Inés Morán y soy Dietista - Nutricionista graduada por la Universidad de Valladolid, colegiada con el nº CYL00346.</p>
-                <p>Mi vida siempre ha estado ligada al deporte ya que he sido nadadora desde los 8 años. A raíz de mi disciplina y con el objetivo de mejorar mi rendimiento, comenzó mi interés por el mundo de la nutrición y en especial, de la nutrición deportiva. Es por ello que me encuentro actualmente estudiando un máster especializado en la nutrición dentro del deporte y del ejercicio físico en la Universidad de Westminster, Londres.</p>
-                <p>Pero no todo es deporte. Esta maravillosa profesión me ha dado la oportunidad de ayudar a otras personas a través de la nutrición, bien sea con la mejora de hábitos y la relación con la comida, el cumplimiento de objetivos o la mejora en el tratamiento de patologías; lo que actualmente más me aporta como profesional y como persona.</p>
-            </div>
-            -->
-            <div class="description">
-                <p>Hola, mi nombre es Inés Morán y soy Dietista - Nutricionista graduada por la Universidad de Valladolid, colegiada con el nº CYL00346.</p>
-                <p>Mi vida siempre ha estado ligada al deporte ya que he sido nadadora desde los 8 años. A raíz de mi disciplina y con el objetivo de mejorar mi rendimiento, comenzó mi interés por el mundo de la nutrición y en especial, de la nutrición deportiva. Es por ello que me encuentro actualmente estudiando un máster especializado en la nutrición dentro del deporte y del ejercicio físico en la Universidad de Westminster, Londres.</p>
-                <p>Pero no todo es deporte. Esta maravillosa profesión me ha dado la oportunidad de ayudar a otras personas a través de la nutrición, bien sea con la mejora de hábitos y la relación con la comida, el cumplimiento de objetivos o la mejora en el tratamiento de patologías; lo que actualmente más me aporta como profesional y como persona.</p>
+                <p>¡Hola! Mi nombre es Inés Morán, soy <span class="is-overlined">Dietista-Nutricionista</span> y sin embargo la palabra <span class="italic">dieta</span> no me ha gustado nunca. Creo fielmente que para conseguir un objetivo, sea del tipo que sea, nunca es necesario sufrir para alcanzarlo.</p>
+                <p>Por esa razón desde mi consulta promuevo la <span class="is-overlined">individualización</span> de cada persona, para que juntos alcancemos la <span class="is-overlined">mejor versión</span> de uno mismo. Sin restricciones, prohibiciones o culpabilidad que frustren un camino de aprendizaje y cambio de hábitos. <span class="bold">Sea cual sea tu objetivo, vamos a por él</span>.</p>
                 <div class="long">
-                    <p>Además, debido a mi curiosidad incansable, empecé a interesarme por el mundo de la investigación y gracias a ello he tenido el placer de llevar a cabo dos proyectos:</p>
+                    <p>Me gradué por la Universidad de Valladolid y actualmente pertenezco al Colegio de Dietistas-Nutricionistas de Castilla y León, nº CYL00346.</p>
+                    <p>Mi vida siempre ha estado ligada al deporte ya que he sido nadadora desde los 8 años. A raíz de mi disciplina y con el objetivo de mejorar mi rendimiento, comenzó mi interés por el mundo de la nutrición y en especial, de la nutrición deportiva. Es por ello que me encuentro actualmente estudiando un máster especializado en la nutrición dentro del deporte y del ejercicio físico en la Universidad de Westminster, Londres.</p>
+                    <p>Pero no todo es deporte. Esta maravillosa profesión me ha dado la oportunidad de ayudar a otras personas a través de la nutrición, bien sea con la mejora de hábitos y la relación con la comida, el cumplimiento de objetivos o la mejora en el tratamiento de patologías; lo que actualmente más me aporta como profesional y como persona.</p>
+                    <p>Además, debido a mi curiosidad incansable, empecé a interesarme por el mundo de la investigación y gracias a ello he tenido el placer de llevar a cabo 2 proyectos científicos:</p>
                     <ul>
-                        <li><p>Uno de ellos junto a la Universidad de Valladolid referente a los diversos métodos para medir la composición corporal en jóvenes nadadores.</p></li>
+                        <li><p>Uno de ellos junto a la Universidad de Valladolid referente a los diversos métodos para medir la composición corporal en jóvenes nadadores y su utilidad de cara al rendimiento deportivo.</p></li>
                         <li><p>Otro junto al Centro Regional de Medicina Deportiva de Valladolid (CeReMeDe), en el que trabajé conjuntamente con el grupo de especialistas del centro, en la valoración nutricional de deportistas de la disciplina de danza.</p></li>
                     </ul>
                     <p>El conocimiento adquirido en cada uno de los campos hace que hoy disponga de las herramientas necesarias para llevar a cabo un único objetivo: <span class="bold"><br>La promoción de la salud de mis pacientes</spam>.</p>
@@ -87,7 +82,7 @@
                 </div>
                 <hr class="line">
                 <div class="description">
-                    <p>Tras la primera consulta, se llevarán a cabo revisiones periódicas cada 15 días (podrán realizarse con mayor periocidad, según preferencia del paciente) con el objetivo de resolver dudas, realizar las modificaciones que sean necesarias, y valorar los progresos.</p>
+                    <p>Tras la primera consulta, se llevarán a cabo revisiones periódicas cada 15 días (podrán realizarse con mayor periocidad, según preferencia) con el objetivo de resolver dudas, realizar las modificaciones que sean necesarias, y valorar los progresos.</p>
                 </div>
             </div>
         </div>
@@ -102,9 +97,9 @@
                 <h3>Objetivo</h3>
                 <p>Mi objetivo fundamental como profesional es buscar siempre la salud en su conjunto y sin restricciones, siempre acompañada de la flexibilidad.</p>
                 <h3>Educación nutricional</h3>
-                <p>Me gustaría hacer entender que los alimentos no son buenos ni malos per se, sino que todos ellos han de mirarse en un contexto, especialmente teniendo en cuenta el objetivo del paciente. Esto hace que la educación nutricional sea un trabajo esencial en mi consulta, con el fin de que cuando la abandone el paciente, sepa por si mismo hacer buenas elecciones en su día a día.</p>
+                <p>Me gusta hacer entender que los alimentos no son buenos ni malos per se, sino que todos ellos han de mirarse en un contexto, especialmente teniendo en cuenta el objetivo del paciente. Esto hace que la educación nutricional sea un trabajo esencial en mi consulta, con el fin de que cuando la abandone el paciente, sepa por si mismo hacer buenas elecciones en su día a día.</p>
                 <h3>Estudio individualizado</h3>
-                <p>Mi prioridad es conocer al paciente a fondo para poder llevar a cabo una intervención lo más individualizada posible, por lo que me gusta invertir suficiente tiempo en la 1ª consulta. Recuerda que todos nosotros somos distintos los unos de los otros, y cada persona tendrá necesidades diferentes.</p>
+                <p>Mi prioridad es conocer al paciente a fondo para poder llevar a cabo una intervención lo más individualizada posible, por lo que me gusta invertir suficiente tiempo en la 1ª consulta. Recuerda que todos nosotros somos distintos los unos de los otros, y cada persona tendrá necesidades diferentes. Será el propio paciente quien elija cómo desarrollar el tratamiento propuesto para que la adaptación al mismo sea perfecta.</p>
             </article>
         </div>
     </section>

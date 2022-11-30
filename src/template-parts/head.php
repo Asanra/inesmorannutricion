@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ines Morán Nutrición</title>
-  <meta name="description" content="Mi nombre es Inés Morán y soy dietista - nutricionista.">
+  <meta name="description" content="Mi nombre es Inés Morán y soy Dietista-Nutricionista. Si estás pensando en dar un paso nuevo en tu vida, ¡No dudes en contactar conmigo!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no"/>
 
