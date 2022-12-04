@@ -103,7 +103,7 @@
             <div class="title">
                 <h2>Cómo trabajo</h2>
                 <div class="img">
-                    <img src="img/work.png">
+                    <img src="img/como-trabajo.png">
                 </div>
             </div>
             <article>
