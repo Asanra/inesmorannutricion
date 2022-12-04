@@ -58,10 +58,6 @@
 }
 
 .main-nav .btn a:hover {
-    /*
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    */
     background-color: var(--color-background);
 }
 
@@ -132,7 +128,7 @@
     display: none;
 }
 
-.about .description ul {
+.description ul {
     list-style-image: url(../img/naranja.svg);
 }
 
@@ -161,6 +157,7 @@
 
 .online {
     padding: 52px 32px 0;
+    padding: 0 32px;
 }
 
 .online .title {
@@ -214,13 +211,17 @@
 .online .img {
     margin: 32px 24px 40px;
     display: flex;
-    height: 300px;
+    height: 265px;
 }
 
 .online .img img {
     max-height: 100%;
     margin: 0px auto;
     object-fit: contain;
+}
+
+.online .network {
+    font-style: italic;
 }
 
 .online .line {
@@ -244,12 +245,30 @@
     line-height: 1.6;
 }
 
+.online .description p {
+    margin-bottom: 1rem;
+}
+
+.online .description ul {
+    margin-top: 0;
+}
+
 .work {
-    padding: 52px 32px;
+    padding: 0 32px 52px;
 }
 
 .work .title {
     color: var(--color-text-primary);
+    position: relative;
+}
+
+.work .img {
+    margin: 32px 24px 40px;
+    display: flex;
+    height: 265px;
+    position: absolute;
+    top: 50px;
+    left: -100px;
 }
 
 .work article {
@@ -274,6 +293,7 @@
 
 .contact {
     padding: 52px 32px;
+    padding: 0 32px;
 }
 
 .contact p {
@@ -372,6 +392,9 @@
     .work .grid {
         grid-template-columns: 3fr 5fr;
         column-gap: 40px;
+        /*
+        gap: 24px 40px;
+        */
     }
 }
 

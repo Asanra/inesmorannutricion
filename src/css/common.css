@@ -28,7 +28,7 @@
     font-family: 'Source Sans Pro';
     src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2) format("woff2");
     font-weight: 400;
-    font-display: optional; /* hide text for up to 100ms, then only use the web font if it is available - never swapping */
+    font-display: swap; /* show text as soon as possible, and always swap in the web font when it loads */
 }
 
 @font-face {
