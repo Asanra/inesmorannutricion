@@ -51,6 +51,7 @@
 }
 
 .main-nav .btn a {
+    background-color: var(--color-background);
     border: 2px solid var(--color-text-primary);
     border-radius: 8px;
     padding: 0 0.8em;
@@ -58,11 +59,13 @@
 }
 
 .main-nav .btn a:hover {
-    background-color: var(--color-background);
+    background-color: var(--color-secondary);
 }
 
 .about {
+    background-color: var(--color-secondary);
     padding: 52px 32px 0;
+    padding: 52px 32px;
 }
 
 .grid {
@@ -71,7 +74,9 @@
 
 .about .grid {
     gap: 24px 24px;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 20px 3fr 4fr;
+    grid-template-rows: 20px 1fr;
+    position: relative;
 }
 
 .insta svg {
@@ -81,9 +86,23 @@
 }
 
 .about .photo {
+    grid-column-start: 2;
+    grid-row-start: 2;
     align-self: stretch;
     justify-self: center;
     width: 100%;
+    z-index: 1;
+}
+
+.about .orange-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: -85px;
+    left: 250px;
 }
 
 .about .photo img {
@@ -91,13 +110,28 @@
     width: 340px;
     height: 340px;
     */
-    /*
-    clip-path: circle(50%);
-    */
-    
+    border-radius: 8px;
+}
+
+.about .orange-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 280px;
+    left: -85px;
+}
+
+.about .orange-1 img, .about .orange-2 img {
+    width: 250px;
+    height: 250px;
 }
 
 .about .intro {
+    grid-column-start: 3;
+    grid-row-start: 2;
     color: var(--color-text-primary);
     align-self: center;
 }
@@ -115,13 +149,15 @@
 }
 
 .about .intro a:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-background);
 }
 
 .about .description {
+    grid-column-start: 3;
+    grid-row-start: 3;
     font-size: 1.1em;
     line-height: 1.6;
-    grid-column-start: span 2;
+    grid-column-start: 3;
 }
 
 .about .description .long {
@@ -157,7 +193,6 @@
 
 .online {
     padding: 52px 32px 0;
-    padding: 0 32px;
 }
 
 .online .title {
@@ -333,7 +368,7 @@
 }
 
 .is-overlined::before {
-    background: var(--color-secondary);
+    background: var(--color-background);
     bottom: 0.25em;
     content: "";
     height: 0.4em;
@@ -355,12 +390,16 @@
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 48em) {
     .about .grid {
+    /*
         gap: 24px 40px;
         grid-template-columns: 3fr 5fr;
+    */
     }
 
     .about .photo {
+        /*
         grid-row-start: span 2;
+        */
     }
 
     .about .intro {
@@ -372,7 +411,9 @@
     }
 
     .about .description {
+        /*
         grid-column-start: 2;
+        */
     }
 
     .online .grid {
