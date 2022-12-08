@@ -73,10 +73,10 @@
 }
 
 .about .grid {
-    gap: 24px 24px;
-    grid-template-columns: 20px 3fr 4fr;
-    grid-template-rows: 20px 1fr;
-    position: relative;
+    gap: 14px 40px;
+    grid-template-columns: 0px 3fr 4fr;
+    grid-template-rows: 0px repeat(2, auto);
+
 }
 
 .insta svg {
@@ -87,22 +87,18 @@
 
 .about .photo {
     grid-column-start: 2;
-    grid-row-start: 2;
-    align-self: stretch;
+    grid-row: 2/4;
     justify-self: center;
     width: 100%;
     z-index: 1;
 }
 
 .about .orange-1 {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 1;
-    width: 250px;
-    height: 250px;
-
-    position: absolute;
-    top: -85px;
-    left: 250px;
+    justify-self: end;
+    align-self: end;
+    transform: translateY(64px);
 }
 
 .about .photo img {
@@ -114,19 +110,15 @@
 }
 
 .about .orange-2 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    width: 250px;
-    height: 250px;
-
-    position: absolute;
-    top: 280px;
-    left: -85px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    align-self: start;
+    transform: translate(-50px);
 }
 
 .about .orange-1 img, .about .orange-2 img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 }
 
 .about .intro {
@@ -157,7 +149,6 @@
     grid-row-start: 3;
     font-size: 1.1em;
     line-height: 1.6;
-    grid-column-start: 3;
 }
 
 .about .description .long {

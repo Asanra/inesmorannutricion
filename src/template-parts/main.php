@@ -2,13 +2,13 @@
     <section id="sobre-mi" class="about">
         <div class="l-wrap grid">
             <div class="orange-1">
-                <img src="img/naranja.svg">
+                <img src="img/orange.svg">
             </div>
             <div class="photo">
                 <img src="img/2.jpeg">
             </div>
             <div class="orange-2">
-                <img src="img/naranja.svg">
+                <img src="img/orange.svg">
             </div>
             <div class="intro">
                 <h1>
@@ -28,25 +28,23 @@
                         <span>Instagram</span>
                     </a>
                 </p>
-
-                <div class="description">
-                    <p>¡Hola! Mi nombre es Inés Morán, soy <span class="is-overlined">Dietista-Nutricionista</span> y sin embargo la palabra <span class="italic">"dieta"</span> no me ha gustado nunca. Creo fielmente que para conseguir un objetivo, sea del tipo que sea, <span class="is-overlined">no es necesario sufrir</span> para alcanzarlo.</p>
-                    <p>Por esa razón desde mi consulta promuevo la <span class="is-overlined">individualización</span> de cada persona, para que juntos alcancemos la <span class="is-overlined">mejor versión</span> de uno mismo. Sin restricciones, prohibiciones o culpabilidad que frustren un camino de aprendizaje y cambio de hábitos. <span class="bold">Sea cual sea tu objetivo, vamos a por él</span>.</p>
-                    <div class="long">
-                        <p>Me gradué por la Universidad de Valladolid y actualmente pertenezco al <span class="bold">Colegio de Dietistas-Nutricionistas de Castilla y León</span>, nº CYL00346.</p>
-                        <p>Mi vida siempre ha estado ligada al deporte ya que he sido nadadora desde los 8 años. A raíz de mi disciplina y con el objetivo de mejorar mi rendimiento, comenzó mi <span class="is-overlined">interés</span> por el mundo de la nutrición y en especial, de la <span class="is-overlined">nutrición deportiva</span>. Es por ello que me encuentro actualmente estudiando un <span class="bold">máster especializado</span> en la nutrición dentro del deporte y del ejercicio físico en la <span class="bold">Universidad de Westminster</span>, Londres.</p>
-                        <p>Pero no todo es deporte. Esta maravillosa profesión me ha dado la oportunidad de <span class="is-overlined">ayudar</span> a otras personas a través de la nutrición, bien sea con la <span class="is-overlined">mejora de hábitos</span> y la <span class="is-overlined">relación con la comida</span>, el <span class="is-overlined">cumplimiento de objetivos</span> o la mejora en el <span class="is-overlined">tratamiento de patologías</span>; lo que actualmente más me aporta como profesional y como persona.</p>
-                        <p>Además, debido a mi curiosidad incansable, empecé a interesarme por el mundo de la investigación y gracias a ello he tenido el placer de llevar a cabo <span class="bold">2 proyectos científicos</span>:</p>
-                        <ul>
-                            <li><p>Uno de ellos junto a la <span class="bold">Universidad de Valladolid</span> referente a los diversos métodos para medir la composición corporal en jóvenes nadadores y su utilidad de cara al rendimiento deportivo.</p></li>
-                            <li><p>Otro junto al <span class="bold">Centro Regional de Medicina Deportiva de Valladolid (CeReMeDe)</span>, en el que trabajé conjuntamente con el grupo de especialistas del centro, en la valoración nutricional de deportistas de la disciplina de danza.</p></li>
-                        </ul>
-                        <p>El conocimiento adquirido en cada uno de los campos hace que hoy disponga de las herramientas necesarias para llevar a cabo un único objetivo: <span class="bold"><br>La promoción de la salud de mis pacientes</spam>.</p>
-                    </div>
-                    <button id="myBtn" class="btn" onclick="displayMore();" data-btn="more">Conóceme más</button>
-                </div>
             </div>
-            
+            <div class="description">
+                <p>¡Hola! Mi nombre es Inés Morán, soy <span class="is-overlined">Dietista-Nutricionista</span> y sin embargo la palabra <span class="italic">"dieta"</span> no me ha gustado nunca. Creo fielmente que para conseguir un objetivo, sea del tipo que sea, <span class="is-overlined">no es necesario sufrir</span> para alcanzarlo.</p>
+                <p>Por esa razón desde mi consulta promuevo la <span class="is-overlined">individualización</span> de cada persona, para que juntos alcancemos la <span class="is-overlined">mejor versión</span> de uno mismo. Sin restricciones, prohibiciones o culpabilidad que frustren un camino de aprendizaje y cambio de hábitos. <span class="bold">Sea cual sea tu objetivo, vamos a por él</span>.</p>
+                <div class="long">
+                    <p>Me gradué por la Universidad de Valladolid y actualmente pertenezco al <span class="bold">Colegio de Dietistas-Nutricionistas de Castilla y León</span>, nº CYL00346.</p>
+                    <p>Mi vida siempre ha estado ligada al deporte ya que he sido nadadora desde los 8 años. A raíz de mi disciplina y con el objetivo de mejorar mi rendimiento, comenzó mi <span class="is-overlined">interés</span> por el mundo de la nutrición y en especial, de la <span class="is-overlined">nutrición deportiva</span>. Es por ello que me encuentro actualmente estudiando un <span class="bold">máster especializado</span> en la nutrición dentro del deporte y del ejercicio físico en la <span class="bold">Universidad de Westminster</span>, Londres.</p>
+                    <p>Pero no todo es deporte. Esta maravillosa profesión me ha dado la oportunidad de <span class="is-overlined">ayudar</span> a otras personas a través de la nutrición, bien sea con la <span class="is-overlined">mejora de hábitos</span> y la <span class="is-overlined">relación con la comida</span>, el <span class="is-overlined">cumplimiento de objetivos</span> o la mejora en el <span class="is-overlined">tratamiento de patologías</span>; lo que actualmente más me aporta como profesional y como persona.</p>
+                    <p>Además, debido a mi curiosidad incansable, empecé a interesarme por el mundo de la investigación y gracias a ello he tenido el placer de llevar a cabo <span class="bold">2 proyectos científicos</span>:</p>
+                    <ul>
+                        <li><p>Uno de ellos junto a la <span class="bold">Universidad de Valladolid</span> referente a los diversos métodos para medir la composición corporal en jóvenes nadadores y su utilidad de cara al rendimiento deportivo.</p></li>
+                        <li><p>Otro junto al <span class="bold">Centro Regional de Medicina Deportiva de Valladolid (CeReMeDe)</span>, en el que trabajé conjuntamente con el grupo de especialistas del centro, en la valoración nutricional de deportistas de la disciplina de danza.</p></li>
+                    </ul>
+                    <p>El conocimiento adquirido en cada uno de los campos hace que hoy disponga de las herramientas necesarias para llevar a cabo un único objetivo: <span class="bold"><br>La promoción de la salud de mis pacientes</spam>.</p>
+                </div>
+                <button id="myBtn" class="btn" onclick="displayMore();" data-btn="more">Conóceme más</button>
+            </div>
         </div>
     </section>
     <section id="consulta-online" class="l-wrap online">
