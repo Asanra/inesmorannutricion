@@ -107,9 +107,9 @@
         <div class="grid">
             <div class="title">
                 <h2>Cómo trabajo</h2>
-                <div class="img">
-                    <img src="img/como-trabajo.png">
-                </div>
+            </div>
+            <div class="img">
+                <img src="img/como-trabajo.png">
             </div>
             <article>
                 <h3>Objetivo</h3>
