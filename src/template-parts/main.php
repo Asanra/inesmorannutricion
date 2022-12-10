@@ -5,7 +5,7 @@
                 <img src="img/orange.svg">
             </div>
             <div class="photo">
-                <img src="img/2.jpeg">
+                <img src="img/inesmorannutricion-zoom-out.jpeg">
             </div>
             <div class="orange-2">
                 <img src="img/orange.svg">
@@ -61,7 +61,7 @@
                     <span class="time">1h</span>
                 </div>
                 <div class="img">
-                    <img src="img/primera_consulta.png">
+                    <img src="img/primera-consulta.png">
                 </div>
                 <div class="network">
                     Zoom / Skype
