@@ -2,7 +2,7 @@
     <div class="l-wrap flex alig-cent just-betw">
         <div class="logo">
             <a href="https://inesmorannutricion.com">
-                <img src="img/logo.png">
+                <img src="img/logo.png" alt="Ir a inesmorannutricion.com">
             </a>
         </div>
         <nav class="main-nav">
