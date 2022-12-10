@@ -15,6 +15,15 @@
     });
   }
 
+  var anclas = document.querySelectorAll('[data-ref]');
+  for (i = 0; i < anclas.length; i++) {
+    anclas[i].addEventListener("click", function() {
+      burguer.click();
+      let ref = this.dataset.ref;
+      window.location.href=ref;
+    });
+  }
+
   // Comportamiento btn 'Saber más'
   function displayMore() {
     let btn = document.getElementById('myBtn');

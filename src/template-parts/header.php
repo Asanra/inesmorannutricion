@@ -22,10 +22,10 @@
     <div class="menu-toggle">
         <div class="nav">
             <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#consulta-online">Consulta online</a></li>
-                <li><a href="#como-trabajo">Cómo trabajo</a></li>
-                <li class="btn"><a href="#contactame">Contáctame</a></li>
+                <li><a href="javascript:void(0);" data-ref="#sobre-mi">Sobre mi</a></li>
+                <li><a href="javascript:void(0);" data-ref="#consulta-online">Consulta online</a></li>
+                <li><a href="javascript:void(0);" data-ref="#como-trabajo">Cómo trabajo</a></li>
+                <li class="btn"><a href="javascript:void(0);" data-ref="#contactame">Contáctame</a></li>
             </ul>
         </div>
     </div>
