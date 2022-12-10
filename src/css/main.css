@@ -64,7 +64,6 @@
 
 .about {
     background-color: var(--color-secondary);
-    padding: 52px 32px 0;
     padding: 52px 32px;
 }
 
@@ -73,10 +72,9 @@
 }
 
 .about .grid {
-    gap: 14px 40px;
+    gap: 14px 14px;
     grid-template-columns: 0px 3fr 4fr;
     grid-template-rows: 0px repeat(2, auto);
-
 }
 
 .insta svg {
@@ -87,8 +85,9 @@
 
 .about .photo {
     grid-column-start: 2;
-    grid-row: 2/4;
-    justify-self: center;
+    grid-row-start: 2;
+    justify-self: stretch;
+    align-self: center;
     width: 100%;
     z-index: 1;
 }
@@ -98,27 +97,23 @@
     grid-row-start: 1;
     justify-self: end;
     align-self: end;
-    transform: translateY(64px);
+    transform: translate(-5px, 34px);
 }
 
 .about .photo img {
-    /*
-    width: 340px;
-    height: 340px;
-    */
     border-radius: 8px;
 }
 
 .about .orange-2 {
     grid-column-start: 2;
-    grid-row-start: 3;
-    align-self: start;
-    transform: translate(-50px);
+    grid-row-start: 2;
+    align-self: end;
+    transform: translate(-20px, -5px);
 }
 
 .about .orange-1 img, .about .orange-2 img {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
 }
 
 .about .intro {
@@ -133,7 +128,8 @@
 }
 
 .about .intro p {
-    font-size: 1.1em;    
+    font-size: 1.1em;
+    margin-bottom: 0;   
 }
 
 .about .intro a {
@@ -145,10 +141,11 @@
 }
 
 .about .description {
-    grid-column-start: 3;
+    grid-column: 2/4;
     grid-row-start: 3;
     font-size: 1.1em;
     line-height: 1.6;
+    margin-top: .5em;
 }
 
 .about .description .long {
@@ -391,31 +388,33 @@
 @media only screen and (min-width: 48em) {
 
     .about .photo {
-        /*
-        grid-row-start: span 2;
-        */
-    }
-
-    .about .photo img {
-        height: 100%;
-        object-fit: cover;
-        object-position: 25%;
-    }
-
-    .about .orange-2 {
-        align-self: center;
-    }
-
-    .about .intro {
+        grid-row: 2/4;
+        justify-self: center;
         align-self: start;
     }
 
-    .about .intro h1 {
-        font-size: 3em;
+    .about .orange-1 {
+        transform: translate(-5px, 44px);
+    }
+
+    .about .orange-2 {
+        grid-row-start: 3;
+        align-self: start;
+        transform: translate(-30px, 100px);
+    }
+
+    .about .orange-1 img, .about .orange-2 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about .intro p {
+        margin-bottom: .5em;
     }
 
     .about .description {
         grid-column-start: 3;
+        margin-top: 0;
     }
 
     .online .grid {
@@ -458,9 +457,30 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 62em) {
-    .about .photo img {
-        height: auto;
-        
+
+    .about .grid {
+        gap: 14px 40px;
+    }
+
+    .about .intro h1 {
+        font-size: 3em;
+    }
+
+    .about .intro p {
+        margin-bottom: 1.5em;
+    }
+
+    .about .orange-1 {
+        transform: translate(-5px, 64px);
+    }
+
+    .about .orange-2 {
+        transform: translate(-50px, 100px);
+    }
+
+    .about .orange-1 img, .about .orange-2 img {
+        width: 100px;
+        height: 100px;
     }
 }
 
