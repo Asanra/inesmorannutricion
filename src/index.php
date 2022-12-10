@@ -5,6 +5,16 @@
   include('template-parts/footer.php');
 ?>
 <script>
+
+  // Comportamiento Burguer Menu
+  var burguer = document.querySelector(".container-menu");
+  if (burguer) {
+    burguer.addEventListener('click', function() {
+      this.classList.toggle("change");
+      document.getElementsByTagName('header')[0].classList.toggle("open");
+    });
+  }
+
   // Comportamiento btn 'Saber más'
   function displayMore() {
     let btn = document.getElementById('myBtn');
