@@ -15,11 +15,14 @@ const gulp = require('gulp'),
 
     let files = {
         src: [
-            './src*',
-            './src*/*.*',
-            './src*/doc*/**/*',
-            './src*/fonts*/**/*',
-            './src*/template-parts*/**/*'
+            'src/.htaccess',
+            'src/app.webmanifest',
+            'src/favicon.ico',
+            'src/robots.txt',
+            'src/doc*/**/*',
+            'src/fonts*/**/*',
+            'src/template-parts*/**/*',
+            'src/img*/icons/**/*'
         ]
     };
 
@@ -75,7 +78,7 @@ function processImg() {
                     ]
                 })
             ])))
-            .pipe(gulp.dest('dist/src/img'));
+            .pipe(gulp.dest('dist/img'));
 }
 
 /* Cambio automático de rutas a los nuevos archivos js y css en los archivos php.
@@ -86,7 +89,7 @@ function processRef() {
           .pipe(gulpif('*.js', uglify()))
           .pipe(gulpif('*.css', cleanCss()))
           .pipe(gulpif('*.css', autoPrefixer()))
-          .pipe(gulp.dest('dist/src/'));
+          .pipe(gulp.dest('dist'));
 }
 
 /* Control de versiones de archivos para caché */
