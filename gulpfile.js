@@ -15,16 +15,10 @@ const gulp = require('gulp'),
 
     let files = {
         src: [
-            './*.json',
-            './fonts-ttf*/**/*',
             './src*',
             './src*/*.*',
             './src*/doc*/**/*',
             './src*/fonts*/**/*',
-            './src*/js*/vendor*/**/*',
-            './src*/lib*/**/*',
-            './src*/statics*/**/*',
-            './src*/statics*/.*',
             './src*/template-parts*/**/*'
         ]
     };
