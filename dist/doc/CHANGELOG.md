@@ -1,6 +1,6 @@
 Historial de actualizaciones
 ============================
 
-###v1.0 (14/12/2022)
+###v1.0 (19/12/2022)
 
 - Versión lanzamiento

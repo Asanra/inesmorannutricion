@@ -5,7 +5,7 @@
                 <img src="img/orange.svg">
             </div>
             <div class="photo">
-                <img src="img/inesmorannutricion-zoom-out.jpg">    
+                <img src="img/inesmorannutricion-zoom-out.jpg">
             </div>
             <div class="orange-2">
                 <img src="img/orange.svg">
