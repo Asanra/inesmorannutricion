@@ -15,7 +15,6 @@ const gulp = require('gulp'),
 
     let files = {
         src: [
-            'src/.htaccess',
             'src/app.webmanifest',
             'src/CNAME',
             'src/favicon.ico',
