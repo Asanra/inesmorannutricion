@@ -12,10 +12,11 @@
   <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png"><!-- 180×180 -->
   <link rel="manifest" href="app.webmanifest">
 
-	<link rel="preload" href="fonts/Source_Sans_Pro/SourceSansPro-Bold.woff2" crossorigin="anonymous" as="font" type="font/woff2">
-
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?t=1672923871101">
+  
   <meta name="theme-color" content="#3D182F">
+
+  <meta http-equiv="Cache-Control" content="max-age=31536000, immutable"/>
 
   <link rel="canonical" href="https://www.inesmorannutricion.com">
 </head>
@@ -24,7 +25,7 @@
         <div class="l-wrap flex alig-cent just-betw">
             <div class="logo">
                 <a href="https://inesmorannutricion.com">
-                    <img src="img/logo.PNG" alt="Ir a inesmorannutricion.com">
+                    <img src="img/logo.png" alt="Ir a inesmorannutricion.com">
                 </a>
             </div>
             <nav class="main-nav">
@@ -59,7 +60,10 @@
                     <img src="img/orange.svg">
                 </div>
                 <div class="photo">
-                    <img src="img/inesmorannutricion-zoom-out.jpg">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/inesmorannutricion-zoom-in.jpg">
+                        <img src="img/inesmorannutricion-zoom-out.jpg" alt="Retrato de Inés Morán Nutrición">
+                    </picture>
                 </div>
                 <div class="orange-2">
                     <img src="img/orange.svg">
