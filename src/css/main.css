@@ -131,6 +131,7 @@
 .about {
     background-color: var(--color-secondary);
     padding: 32px 32px 52px;
+    scroll-margin-top: 100px;
 }
 
 .grid {
@@ -159,11 +160,14 @@
 }
 
 .about .orange-1 {
+    display: none;
     grid-column-start: 2;
     grid-row-start: 1;
     justify-self: end;
     align-self: end;
+    /*
     transform: translate(-5px, 34px);
+    */
 }
 
 .about .photo img {
@@ -247,6 +251,7 @@
 
 .online {
     padding: 3.25rem 2rem 0;
+    scroll-margin-top: 100px;
 }
 
 .online .title {
@@ -345,6 +350,7 @@
 
 .work {
     padding: 0 2rem 3.25rem;
+    scroll-margin-top: 100px;
 }
 
 .work .grid {
@@ -460,6 +466,7 @@
     }
 
     .about .orange-1 {
+        display: block;
         transform: translate(-5px, 44px);
     }
 
