@@ -17,11 +17,12 @@ const gulp = require('gulp'),
         src: [
             'src/.htaccess',
             'src/app.webmanifest',
+            'src/CNAME',
             'src/favicon.ico',
+            'src/README.md',
             'src/robots.txt',
             'src/doc*/**/*',
             'src/fonts*/**/*',
-            'src/template-parts*/**/*',
             'src/img*/icons/**/*'
         ]
     };
@@ -81,12 +82,11 @@ function processImg() {
             .pipe(gulp.dest('dist/img'));
 }
 
-/* Cambio automático de rutas a los nuevos archivos js y css en los archivos php.
+/* Cambio automático de rutas a los nuevos archivos css.
    También concatena y minifica el código */
 function processRef() {
-  return gulp.src(['src/**/*.php'])
+  return gulp.src(['src/**/*.html'])
           .pipe(useref({searchPath: './src'}))
-          .pipe(gulpif('*.js', uglify()))
           .pipe(gulpif('*.css', cleanCss()))
           .pipe(gulpif('*.css', autoPrefixer()))
           .pipe(gulp.dest('dist'));
@@ -94,15 +94,9 @@ function processRef() {
 
 /* Control de versiones de archivos para caché */
 function processHash() {
-    return gulp.src(['dist/**/*.php'])
+    return gulp.src(['dist/**/*.html'])
             .pipe(cachebust({type: 'timestamp'}))
             .pipe(gulp.dest('dist'));
-}
-
-/* Ponemos en escucha los siguientes archivos para actualizar los cambios en dist */
-function watcher() {
-  gulp.watch('src/css/*.css', gulp.series(processCss));
-  gulp.watch('src/js/*.js', gulp.series(processJs));
 }
 
 /* Lanzamos un navegador para ver cambios en html */
@@ -115,40 +109,15 @@ function server() {
   });
 }
 
-/* Lanzamos un navegador con proxy para proyectos con php */
-// Necesitamos xampp para ejecutar el proxy
-// tendremos que poner el puerto correspondiente del xampp y añadir bien la ruta
-function proxy() {
-  browser.init({
-    proxy: 'localhost/inesmorannutricion/src'
-  });
-
-  gulp.watch('**/*.php').on('change', function () {
-    browser.reload();
-  });
-  gulp.watch('src/css/*.css').on('change', function () {
-    browser.reload();
-  });
-  gulp.watch('src/js/*.js').on('change', function () {
-    browser.reload();
-  });
-}
-
 /* Ejecutamos - gulp clean - para limpiar carpeta dist */
 exports.clean = cleaner;
 
-/* Ejecutamos - gulp watch - para poner en escucha archivos */
-exports.watch = watcher;
-
 /* Ejecutamos - gulp server - para lanzar navegador */
 exports.server = server;
-
-/* Ejecutamos - gulp proxy - para lanzar navegador para proyectos con php */
-exports.proxy = proxy;
 
 /* Ejecutamos - gulp convertFonts - para lanzar convertFonts */
 exports.convertFonts = convertFonts;
 
 /* Ejecutamos - gulp - para lanzar serie de tareas de empaquetación */
-exports.default = series(processFiles, processImg, processHash, processRef);
+exports.default = series(processFiles, processImg, processRef, processHash);
 
