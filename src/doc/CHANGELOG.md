@@ -9,3 +9,10 @@ Historial de actualizaciones
 
 - Cambios gramaticales en textos
 - Añadido .htaccess
+
+
+###v1.2 (05/01/2023)
+
+- Cambio de estructura del proyecto para adaptarse a la web en producción
+- Eliminado .htaccess porque GitHub Pages no lo soporta
+- Añadida meta "Cache-Control"

@@ -1,9 +1,0 @@
-/* Asanra */
-
-/* TEAM */
-  Design and Programming: Andrea San Ramón Aller
-  Contact: asanra00@gmail.com
-  From: León, Spain
-
-/* SITE */
-  Last update: 2022/12/22
