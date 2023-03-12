@@ -13,9 +13,9 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.php",
+  "start_url": "/index.html",
   "display": "standalone",
-  "id": "inesmorannutricion.com/index.html",
+  "id": "index.html",
   "theme_color": "#3D182F",
   "background_color": "#F2DECF"
 }
