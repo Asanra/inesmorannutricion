@@ -55,7 +55,7 @@
                         <li><a href="javascript:void(0);" data-ref="#consulta-online">Consulta online</a></li>
                         <li><a href="javascript:void(0);" data-ref="#como-trabajo">Cómo trabajo</a></li>
                         <li class="btn"><a href="javascript:void(0);" data-ref="#contactame">Contáctame</a></li>
-                        <li><a href="javascript:void(0);" data-ref="">EN</a></li>
+                        <li><a href="javascript:void(0);" data-ref="openTab('EN');">EN</a></li>
                     </ul>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                             </ul>
                             <p>El conocimiento adquirido en cada uno de los campos, hace que hoy disponga de las herramientas necesarias para llevar a cabo un único objetivo: <span class="bold"><br>La promoción de la salud de mis pacientes</spam>.</p>
                         </div>
-                        <button id="myBtn" class="btn" onclick="displayMore();" data-btn="more">Conóceme más</button>
+                        <button class="btn more" onclick="displayMore('ES');" data-btn="more" data-lan="ES">Conóceme más</button>
                     </div>
                 </div>
             </section>
@@ -199,7 +199,7 @@
                         ¡No dudes en contactar conmigo!
                     </p>
                     <p class="email">
-                        <a href="mailto:info@inesmorannutricion.com?Subject=Hi!">info@inesmorannutricion.com</a>
+                        <a href="mailto:info@inesmorannutricion.com?Subject=Hola!">info@inesmorannutricion.com</a>
                     </p>
                     <p>
                         <a href="https://www.instagram.com/inesmoran.nutricion/" class="insta">
@@ -227,15 +227,15 @@
             <div class="l-wrap flex alig-cent just-betw">
                 <div class="logo">
                     <a href="https://inesmorannutricion.com">
-                        <img src="img/logo-ines-moran-nutricion.png" width="110" height="69" alt="Ir a inesmorannutricion.com">
+                        <img src="img/logo-ines-moran-nutricion.png" width="110" height="69" alt="Go to inesmorannutricion.com">
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#sobre-mi">About me</a></li>
-                        <li><a href="#consulta-online">Online consultation</a></li>
-                        <li><a href="#como-trabajo">How I work</a></li>
-                        <li class="btn"><a href="#contactame">Contact me</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#online-consultation">Online consultation</a></li>
+                        <li><a href="#how-i-work">How I work</a></li>
+                        <li class="btn"><a href="#contact-me">Contact me</a></li>
                         <li><a href="javascript:void(0);" onclick="openTab('ES');">ES</a></li>
                     </ul>
                 </nav>
@@ -248,17 +248,17 @@
             <div class="menu-toggle">
                 <div class="nav">
                     <ul>
-                        <li><a href="javascript:void(0);" data-ref="#sobre-mi">About me</a></li>
-                        <li><a href="javascript:void(0);" data-ref="#consulta-online">Online consultation</a></li>
-                        <li><a href="javascript:void(0);" data-ref="#como-trabajo">How I work</a></li>
-                        <li class="btn"><a href="javascript:void(0);" data-ref="#contactame">Contact me</a></li>
-                        <li><a href="javascript:void(0);" data-ref="">ES</a></li>
+                        <li><a href="javascript:void(0);" data-ref="#about-me">About me</a></li>
+                        <li><a href="javascript:void(0);" data-ref="#online-consultation">Online consultation</a></li>
+                        <li><a href="javascript:void(0);" data-ref="#how-i-work">How I work</a></li>
+                        <li class="btn"><a href="javascript:void(0);" data-ref="#contact-me">Contact me</a></li>
+                        <li><a href="javascript:void(0);" data-ref="openTab('ES');">ES</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <main class="main-content">
-            <section id="sobre-mi" class="about">
+            <section id="about-me" class="about">
                 <div class="l-wrap grid">
                     <div class="orange-1">
                         <img src="img/orange.svg" alt="">
@@ -266,7 +266,7 @@
                     <div class="photo">
                         <picture>
                             <source media="(max-width: 767px)" srcset="img/inesmorannutricion-in.jpg">
-                            <img src="img/inesmorannutricion-out.jpg" alt="Retrato de Inés Morán Nutrición">
+                            <img src="img/inesmorannutricion-out.jpg" alt="Portrait of Inés Morán Nutrición">
                         </picture>
                     </div>
                     <div class="orange-2">
@@ -305,11 +305,11 @@
                             </ul>
                             <p>The knowledge that I have acquired in each of these fields has equipped me with the necessary tools to achieve a single goal: <span class="bold"><br>Improving the health of my patients</spam>.</p>
                         </div>
-                        <button id="myBtn" class="btn" onclick="displayMore();" data-btn="more">More</button>
+                        <button id="myBtn" class="btn more" onclick="displayMore('EN');" data-btn="more" data-lan="EN">More</button>
                     </div>
                 </div>
             </section>
-            <section id="consulta-online" class="l-wrap online">
+            <section id="online-consultation" class="l-wrap online">
                 <div class="grid">
                     <div class="title">
                         <h2>Online Consultation</h2>
@@ -367,7 +367,7 @@
                 </div>
             </section>
             <div class="separator"></div>
-            <section id="como-trabajo" class="l-wrap work">
+            <section id="how-i-work" class="l-wrap work">
                 <div class="grid">
                     <div class="title">
                         <h2>How I work</h2>
@@ -386,7 +386,7 @@
                 </div>
             </section>
         </main>
-        <footer id="contactame" class="main-footer">
+        <footer id="contact-me" class="main-footer">
             <div class="l-wrap contact">
                 <div class="flex flex-colu flex-cent">
                     <h2>Contact me</h2>
@@ -433,7 +433,11 @@
             anclas[i].addEventListener("click", function() {
                 burguer.click();
                 let ref = this.dataset.ref;
-                window.location.href=ref;
+                if (ref.substr(0,1) == '#') {
+                    window.location.href=ref;
+                } else {
+                    eval(ref);
+                }
             });
         }
         // Comportamiento cambio idioma
@@ -444,19 +448,30 @@
             }
             document.getElementById(tab).style.display = "block";
         }
-        // Comportamiento btn 'Saber más'
-        function displayMore() {
-            let btn = document.getElementById('myBtn');
-            let moreText = document.getElementsByClassName('long')[0];
-            if (btn.getAttribute('data-btn') == 'more') {
-                moreText.style.display = 'block';
-                btn.innerHTML = 'menos';
-                btn.setAttribute('data-btn', 'less');
+        // Comportamiento btn 'Conóceme más'
+        function displayMore(lan) {
+            let txtMore = '';
+            let txtLess = '';
+            if (lan == 'ES') {
+                txtMore = 'Conóceme más';
+                txtLess = 'menos';
             } else {
-                moreText.style.display = 'none';
-                btn.innerHTML = 'Conóceme más';
-                btn.setAttribute('data-btn', 'more');
-                window.scrollTo(0,0);
+                txtMore = 'More';
+                txtLess = 'Less';
+            }
+            let btns = document.querySelectorAll('[data-btn]');
+            let moreText = document.getElementsByClassName('long');
+            for (i = 0; i < btns.length; i++) {
+                if (btns[i].getAttribute('data-btn') == 'more' && btns[i].getAttribute('data-lan') == lan) {
+                    moreText[i].style.display = 'block';
+                    btns[i].innerHTML = txtLess;
+                    btns[i].setAttribute('data-btn', 'less');
+                } else if (btns[i].getAttribute('data-btn') == 'less' && btns[i].getAttribute('data-lan') == lan) {
+                    moreText[i].style.display = 'none';
+                    btns[i].innerHTML = txtMore;
+                    btns[i].setAttribute('data-btn', 'more');
+                    window.scrollTo(0,0);
+                }
             }
         }
         // Actualizar year copyright
