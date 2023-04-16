@@ -216,11 +216,6 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-footer">
-            <div class="l-wrap flex flex-cent">
-                <p>&copy;&nbsp;<span id="year"></span> Inés Morán Nutrición</p>
-            </div>
-        </div>
     </section>
     <section id="EN" class="main-section">
         <header class="main-header">
@@ -239,13 +234,13 @@
                         <li><a href="javascript:void(0);" onclick="openTab('ES');">ES</a></li>
                     </ul>
                 </nav>
-                <div class="container-menu">
+                <div class="container-menu" data-lan="EN">
                     <div class="item1"></div>
                     <div class="item2"></div>
                     <div class="item3"></div>
                 </div>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-toggle" data-lan="EN">
                 <div class="nav">
                     <ul>
                         <li><a href="javascript:void(0);" data-ref="#about-me">About me</a></li>
@@ -413,12 +408,12 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-footer">
-            <div class="l-wrap flex flex-cent">
-                <p>&copy;&nbsp;<span id="year"></span> Inés Morán Nutrición</p>
-            </div>
-        </div>
     </section>
+    <div class="copyright-footer">
+        <div class="l-wrap flex flex-cent">
+            <p>&copy;&nbsp;<span id="year"></span> Inés Morán Nutrición</p>
+        </div>
+    </div>
     <script>
         // Comportamiento Burguer Menu
         var burguer = document.querySelector(".container-menu");
@@ -440,6 +435,7 @@
                 }
             });
         }
+        
         // Comportamiento cambio idioma
         function openTab(tab) {
             let tabcontent = document.getElementsByClassName("main-section");
@@ -448,13 +444,14 @@
             }
             document.getElementById(tab).style.display = "block";
         }
+
         // Comportamiento btn 'Conóceme más'
         function displayMore(lan) {
             let txtMore = '';
             let txtLess = '';
             if (lan == 'ES') {
                 txtMore = 'Conóceme más';
-                txtLess = 'menos';
+                txtLess = 'Menos';
             } else {
                 txtMore = 'More';
                 txtLess = 'Less';
@@ -474,6 +471,7 @@
                 }
             }
         }
+
         // Actualizar year copyright
         let year = new Date();
         document.getElementById('year').innerHTML = year.getFullYear();
