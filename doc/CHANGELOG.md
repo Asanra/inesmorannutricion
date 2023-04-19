@@ -25,3 +25,10 @@ Historial de actualizaciones
 - Adaptado campo 'id' de app.webmanifest a url del sitio
 - Añadidos atributos width/height a las etiquetas img como buena práctica para la carga del sitio
 - Adaptado el tamaño de las imágenes al renderizado en los distintos dispositivos
+
+
+###v1.4 (17/04/2023)
+
+- Añadida la versión en inglés de la página
+- Correcciones en el menú responsive para evitar mal comportamiento que se estaba producciendo en ciertos dispositivos
+- Vuelta atrás del tamaño original de las imágenes porque aparecían pixeladas
