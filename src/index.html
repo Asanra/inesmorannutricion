@@ -42,7 +42,7 @@
                         <li><a href="javascript:void(0);" onclick="openTab('EN');">EN</a></li>
                     </ul>
                 </nav>
-                <div class="container-menu">
+                <div class="container-menu" data-lan="ES" onclick="toggleMenu(this);">
                     <div class="item1"></div>
                     <div class="item2"></div>
                     <div class="item3"></div>
@@ -234,13 +234,13 @@
                         <li><a href="javascript:void(0);" onclick="openTab('ES');">ES</a></li>
                     </ul>
                 </nav>
-                <div class="container-menu" data-lan="EN">
+                <div class="container-menu" data-lan="EN" onclick="toggleMenu(this);">
                     <div class="item1"></div>
                     <div class="item2"></div>
                     <div class="item3"></div>
                 </div>
             </div>
-            <div class="menu-toggle" data-lan="EN">
+            <div class="menu-toggle">
                 <div class="nav">
                     <ul>
                         <li><a href="javascript:void(0);" data-ref="#about-me">About me</a></li>
@@ -416,17 +416,18 @@
     </div>
     <script>
         // Comportamiento Burguer Menu
-        var burguer = document.querySelector(".container-menu");
-        if (burguer) {
-            burguer.addEventListener('click', function() {
-                this.classList.toggle("change");
-                document.getElementsByTagName('header')[0].classList.toggle("open");
-            });
+        let burger = '';
+        function toggleMenu(obj) {
+            burger = obj;
+            let lan = burger.getAttribute('data-lan');
+            let containerburger = document.getElementById(lan);
+            containerburger.getElementsByTagName('header')[0].classList.toggle("open");
+            burger.classList.toggle("change");
         }
         var anclas = document.querySelectorAll('[data-ref]');
         for (i = 0; i < anclas.length; i++) {
             anclas[i].addEventListener("click", function() {
-                burguer.click();
+                burger.click();
                 let ref = this.dataset.ref;
                 if (ref.substr(0,1) == '#') {
                     window.location.href=ref;
