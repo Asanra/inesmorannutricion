@@ -30,5 +30,11 @@ Historial de actualizaciones
 ###v1.4 (17/04/2023)
 
 - Añadida la versión en inglés de la página
-- Correcciones en el menú responsive para evitar mal comportamiento que se estaba producciendo en ciertos dispositivos
+- Correcciones en el menú responsive para evitar mal comportamiento que se estaba produciendo en ciertos dispositivos
 - Vuelta atrás del tamaño original de las imágenes porque aparecían pixeladas
+
+
+###v1.5 (03/05/2023)
+
+- Revisado logo para evitar su pixelado
+- Correcciones en el menú responsive para mejorar funcionamiento
