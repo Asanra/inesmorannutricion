@@ -73,18 +73,22 @@
 
 /* Burguer Menu */
 .menu-toggle {
-    display: none;
+    display: block;
+    position: fixed;
     box-sizing: border-box;
+    top: 0;
+    right: -100vw;
     z-index: 9999;
     width: 100vw;
     height: 100vh;
-    padding: 2rem 0;
+    padding: 2rem .75rem;
     text-align: left;
     background: var(--color-secondary);
+    transition: all 1s;
 }
 
 .open .menu-toggle {
-    display: block;
+    right: 0;
 }
 
 .nav ul {
@@ -362,7 +366,7 @@
 
 .work {
     padding: 0 2rem 3.25rem;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 }
 
 .work .grid {
