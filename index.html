@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png"><!-- 180×180 -->
   <link rel="manifest" href="app.webmanifest">
 
-  <link rel="stylesheet" href="css/main.min.css?t=1681922860767">
+  <link rel="stylesheet" href="css/main.min.css?t=1683133506241">
   
   <meta name="theme-color" content="#3D182F">
 
@@ -44,7 +44,14 @@
                     <div class="item3"></div>
                 </div>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-toggle change">
+                <div class="l-wrap flex alig-cent just-end">
+                    <div class="container-menu" data-lan="ES" onclick="toggleMenu(this);">
+                        <div class="item1"></div>
+                        <div class="item2"></div>
+                        <div class="item3"></div>
+                    </div>
+                </div>
                 <div class="nav">
                     <ul>
                         <li><a href="javascript:void(0);" data-ref="#sobre-mi">Sobre mi</a></li>
@@ -236,7 +243,14 @@
                     <div class="item3"></div>
                 </div>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-toggle change">
+                <div class="l-wrap flex alig-cent just-end">
+                    <div class="container-menu" data-lan="EN" onclick="toggleMenu(this);">
+                        <div class="item1"></div>
+                        <div class="item2"></div>
+                        <div class="item3"></div>
+                    </div>
+                </div>
                 <div class="nav">
                     <ul>
                         <li><a href="javascript:void(0);" data-ref="#about-me">About me</a></li>
@@ -418,7 +432,6 @@
             let lan = burger.getAttribute('data-lan');
             let containerburger = document.getElementById(lan);
             containerburger.getElementsByTagName('header')[0].classList.toggle("open");
-            burger.classList.toggle("change");
         }
         var anclas = document.querySelectorAll('[data-ref]');
         for (i = 0; i < anclas.length; i++) {
