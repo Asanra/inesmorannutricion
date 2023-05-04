@@ -38,3 +38,9 @@ Historial de actualizaciones
 
 - Revisado logo para evitar su pixelado
 - Correcciones en el menú responsive para mejorar funcionamiento
+
+
+###v1.6 (04/05/2023)
+
+- Automatizar selección de idioma según configuración del navegador
+- Recordar idioma seleccionado para próximas visitas
