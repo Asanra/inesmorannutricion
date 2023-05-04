@@ -457,6 +457,7 @@
                 tabcontent[i].style.display = "none";
             }
             document.getElementById(tab).style.display = "block";
+            localStorage.setItem('lan', tab); // Recordar el idioma seleccionado para prox. visitas
         }
 
         // Comportamiento btn 'Conóceme más'
@@ -485,6 +486,22 @@
                 }
             }
         }
+
+        // Cargar idioma del navegador
+        let lanDefault = 'es';
+        let lanStorage = (localStorage.lan) ? localStorage.lan : '';
+        let lan = '';
+        if (lanStorage == '') {
+            // Si no tiene idioma en localStorage detecta el del navegador
+            let lanNavigator = navigator.language;
+            lanNavigator = lanNavigator.substring(0,2);
+            lan = (lanNavigator == 'en') ? lanNavigator : lanDefault; // Si idioma navegador no es English siempre se carga en Español
+            lan = lan.toUpperCase();
+        } else {
+            // Si tiene idioma almacenado en localStorage lo carga
+            lan = lanStorage;
+        }
+        openTab(lan);
 
         // Actualizar year copyright
         let year = new Date();
