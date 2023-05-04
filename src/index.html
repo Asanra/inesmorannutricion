@@ -458,6 +458,8 @@
             }
             document.getElementById(tab).style.display = "block";
             localStorage.setItem('lan', tab); // Recordar el idioma seleccionado para prox. visitas
+            let html = document.getElementsByTagName("HTML")[0];
+            html.lang = tab.toLowerCase(); // Adptar atributo lang al idioma seleccionado
         }
 
         // Comportamiento btn 'Conóceme más'
