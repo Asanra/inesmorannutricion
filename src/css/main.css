@@ -18,7 +18,9 @@
 
 .main-section {
     min-height: 100vh;
+    /*
     display: none;
+    */
     margin-top: 5rem;
 }
 
