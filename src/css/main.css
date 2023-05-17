@@ -12,6 +12,10 @@
 
 
 
+.open {
+    overflow: hidden;
+}
+
 .main-section {
     min-height: 100vh;
     display: none;

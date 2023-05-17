@@ -436,6 +436,7 @@
             let lan = burger.getAttribute('data-lan');
             let containerburger = document.getElementById(lan);
             containerburger.getElementsByTagName('header')[0].classList.toggle("open");
+            document.querySelector("body").classList.toggle("open"); // Evitar scroll en burger menu open
         }
         var anclas = document.querySelectorAll('[data-ref]');
         for (i = 0; i < anclas.length; i++) {
