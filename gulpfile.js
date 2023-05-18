@@ -84,7 +84,7 @@ function processImg() {
 /* Cambio automático de rutas a los nuevos archivos css.
    También concatena y minifica el código */
 function processRef() {
-  return gulp.src(['src/**/*.html'])
+  return gulp.src(['src/*.html'])
           .pipe(useref({searchPath: './src'}))
           .pipe(gulpif('*.css', cleanCss()))
           .pipe(gulpif('*.css', autoPrefixer()))

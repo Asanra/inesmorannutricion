@@ -44,3 +44,10 @@ Historial de actualizaciones
 
 - Automatizar selección de idioma según configuración del navegador
 - Recordar idioma seleccionado para próximas visitas
+
+
+###v1.7 (18/05/2023)
+
+- Evitar scroll al abrir burger menu
+- Nuevo planteamiento para la gestión del idioma
+- Añadidas etiquetas HTML para informar a Goole de las versiones de la página en distintos idiomas
