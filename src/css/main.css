@@ -18,14 +18,7 @@
 
 .main-section {
     min-height: 100vh;
-    /*
-    display: none;
-    */
     margin-top: 5rem;
-}
-
-.main-section#ES { /* Show by default */   
-    display: block;
 }
 
 .main-header {

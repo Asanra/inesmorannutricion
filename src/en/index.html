@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Inés Morán Nutrición</title>
-  <meta name="description" content="Mi nombre es Inés Morán y soy Dietista-Nutricionista. Desde mi consulta promuevo la individualización de cada persona, para que juntos alcancemos la mejor versión de uno mismo. Sin restricciones, prohibiciones o culpabilidad que frustren un camino de aprendizaje y cambio de hábitos. Sea cual sea tu objetivo, vamos a por él!">
+  <meta name="description" content="My name is Inés Morán, I am Dietitian-Nutritionist. In my consultation I promote the individualisation of each person, so that together we can achieve the best version of ourselves. Without restrictions, prohibitions or guilt that frustrate a path of learning and habit change. Whatever your goal may be, let's go for it!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no"/>
 
@@ -25,7 +25,7 @@
   <link rel="canonical" href="https://www.inesmorannutricion.com">
 </head>
 <body>
-    <section id="EN" class="main-section">
+    <section class="main-section" data-lan="EN">
         <header class="main-header">
             <div class="l-wrap flex alig-cent just-betw">
                 <div class="logo">
@@ -42,7 +42,7 @@
                         <li><a href="javascript:void(0);" onclick="openTab('ES');">ES</a></li>
                     </ul>
                 </nav>
-                <div class="container-menu" data-lan="EN" onclick="toggleMenu(this);">
+                <div class="container-menu" onclick="toggleMenu(this);">
                     <div class="item1"></div>
                     <div class="item2"></div>
                     <div class="item3"></div>
@@ -50,7 +50,7 @@
             </div>
             <div class="menu-toggle change">
                 <div class="l-wrap flex alig-cent just-end">
-                    <div class="container-menu" data-lan="EN" onclick="toggleMenu(this);">
+                    <div class="container-menu" onclick="toggleMenu(this);">
                         <div class="item1"></div>
                         <div class="item2"></div>
                         <div class="item3"></div>
@@ -234,11 +234,6 @@
         let burger = '';
         function toggleMenu(obj) {
             burger = obj;
-            /*
-            let lan = burger.getAttribute('data-lan');
-            let containerburger = document.getElementById(lan);
-            containerburger.getElementsByTagName('header')[0].classList.toggle("open");
-            */
             document.querySelector("body").classList.toggle("open"); // Evitar scroll en burger menu open
         }
         var anclas = document.querySelectorAll('[data-ref]');
@@ -256,21 +251,13 @@
         
         // Comportamiento cambio idioma
         function openTab(tab) {
-            /*
-            let tabcontent = document.getElementsByClassName("main-section");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            document.getElementById(tab).style.display = "block";
-            */
             localStorage.setItem('lan', tab); // Recordar el idioma seleccionado para prox. visitas
-            /*
-            let html = document.getElementsByTagName("HTML")[0];
-            html.lang = tab.toLowerCase(); // Adptar atributo lang al idioma seleccionado
-            */
-
-            //window.location.href = 'https://inesmorannutricion.com';
-            window.location.href = '../index.html';
+            let tabcontent = document.querySelector(".main-section");
+            let lanContent = tabcontent.getAttribute('data-lan');
+            if (lanContent != tab) {
+                // Si no coincide el idioma seleccionado con la pagina => redirige
+                window.location.href = '../index.html';
+            }
         }
 
         // Comportamiento btn 'Conóceme más'
@@ -299,22 +286,6 @@
                 }
             }
         }
-
-        // Cargar idioma del navegador
-        let lanDefault = 'es';
-        let lanStorage = (localStorage.lan) ? localStorage.lan : '';
-        let lan = '';
-        if (lanStorage == '') {
-            // Si no tiene idioma en localStorage detecta el del navegador
-            let lanNavigator = navigator.language;
-            lanNavigator = lanNavigator.substring(0,2);
-            lan = (lanNavigator == 'en') ? lanNavigator : lanDefault; // Si idioma navegador no es English siempre se carga en Español
-            lan = lan.toUpperCase();
-        } else {
-            // Si tiene idioma almacenado en localStorage lo carga
-            lan = lanStorage;
-        }
-        //openTab(lan);
 
         // Actualizar year copyright
         let year = new Date();
