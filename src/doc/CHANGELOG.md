@@ -5,6 +5,7 @@ Historial de actualizaciones
 
 - Versión lanzamiento
 
+
 ###v1.1 (22/12/2022)
 
 - Cambios gramaticales en textos
