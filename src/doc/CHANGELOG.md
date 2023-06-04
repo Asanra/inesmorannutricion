@@ -52,3 +52,9 @@ Historial de actualizaciones
 - Evitar scroll al abrir burger menu
 - Nuevo planteamiento para la gestión del idioma
 - Añadidas etiquetas HTML para informar a Goole de las versiones de la página en distintos idiomas
+
+
+###v1.8 (04/06/2023)
+
+- Actualizados textos (precios de las consultas)
+- Añadido sitemap del sitio

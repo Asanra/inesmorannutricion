@@ -20,6 +20,7 @@ const gulp = require('gulp'),
             'src/favicon.ico',
             'src/README.md',
             'src/robots.txt',
+            'src/sitemap.xml',
             'src/doc*/**/*',
             'src/fonts*/**/*',
             'src/img*/icons/**/*'
