@@ -58,3 +58,8 @@ Historial de actualizaciones
 
 - Actualizados textos (precios de las consultas)
 - Añadido sitemap del sitio
+
+
+###v1.9 (12/11/2023)
+
+- Añadida etiqueta meta para la verificar la propiedad del sitio a Google
