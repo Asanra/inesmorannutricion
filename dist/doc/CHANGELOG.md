@@ -63,3 +63,8 @@ Historial de actualizaciones
 ###v1.9 (12/11/2023)
 
 - Añadida etiqueta meta para la verificar la propiedad del sitio a Google
+
+
+###v2.0 (19/11/2023)
+
+- Eliminado subdominio 'www' de las etiquetas meta, robots.txt y sitemap.xml

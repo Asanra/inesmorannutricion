@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.inesmorannutricion.com/sitemap.xml
+Sitemap: https://inesmorannutricion.com/sitemap.xml
