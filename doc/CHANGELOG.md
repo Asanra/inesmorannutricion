@@ -68,3 +68,8 @@ Historial de actualizaciones
 ###v2.0 (19/11/2023)
 
 - Eliminado subdominio 'www' de las etiquetas meta, robots.txt y sitemap.xml
+
+
+###v2.1 (09/12/2023)
+
+- Modificada URL canónica de versión English para que Google también la indexe
