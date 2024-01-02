@@ -73,3 +73,10 @@ Historial de actualizaciones
 ###v2.1 (09/12/2023)
 
 - Modificada URL canónica de versión English para que Google también la indexe
+
+
+###v2.2 (02/01/2024)
+
+- Apartado Consulta Online > Añadida pequeña descripción debajo del título
+- Apartado Consulta Online > Añadida tarjeta nueva para Cita Informativa gratuita
+- Añadida opción para contactar por WhatsApp
