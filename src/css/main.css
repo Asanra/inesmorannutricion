@@ -334,7 +334,10 @@
 .online .img img {
     max-height: 100%;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: cover; 
+}
+
+.online [data-card="primera"] .img img {
     object-position: 35%;
 }
 
@@ -643,10 +646,6 @@
 
     .online .card + .card {
         margin-top: 0;
-    }
-
-    .online .img img {
-        object-fit: contain;
     }
 }
 
