@@ -1,9 +1,9 @@
 /* Asanra */
 
 /* TEAM */
-  Design and Programming: Andrea San Ramón Aller
+  Design and Programming: Andrea San Ramón Aller && Marcos Morán Rodríguez
   Contact: asanra00@gmail.com
   From: León, Spain
 
 /* SITE */
-  Last update: 2024/01/02
+  Last update: 2024/04/07

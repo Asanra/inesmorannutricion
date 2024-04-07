@@ -80,3 +80,9 @@ Historial de actualizaciones
 - Apartado Consulta Online > Añadida pequeña descripción debajo del título
 - Apartado Consulta Online > Añadida tarjeta nueva para Cita Informativa gratuita
 - Añadida opción para contactar por WhatsApp
+
+
+###v2.3 (07/04/2024)
+
+- Actualizados textos (Máster finalizado y precios de las consultas)
+- humans.txt -> Añadido Marcos al equipo de desarrollo
