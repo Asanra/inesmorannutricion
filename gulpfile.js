@@ -82,11 +82,12 @@ function processImg() {
             .pipe(gulp.dest('dist/img'));
 }
 
-/* Cambio automático de rutas a los nuevos archivos css.
+/* Cambio automático de rutas a los nuevos archivos css y js
    También concatena y minifica el código */
 function processRef() {
   return gulp.src(['src/*.html'])
           .pipe(useref({searchPath: './src'}))
+          .pipe(gulpif('*.js', uglify()))
           .pipe(gulpif('*.css', cleanCss()))
           .pipe(gulpif('*.css', autoPrefixer()))
           .pipe(gulp.dest('dist'));
