@@ -138,6 +138,64 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.home {
+    padding: 3.25rem 1rem;
+    scroll-margin-top: 100px;
+    background-color: var(--color-secondary);
+}
+
+.home .btn {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: 0 0.8em;
+}
+
+.home .btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.services {
+    padding: 3.25rem 1rem 0;
+}
+
+.services .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .card + .card {
+    margin-top: 3.5rem;
+}
+
+.services .card img {
+    width: 30%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.services .btn {
+    width: 75%;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: 0 0.8em;
+}
+
+.services .btn:hover {
+    background-color: var(--color-background);
+}
+
+.reviews {
+    padding: 0 1rem 3.25rem;
+}
+
 .about {
     background-color: var(--color-secondary);
     padding: 2rem 1rem 3.25rem;
@@ -261,12 +319,12 @@
     scroll-margin-top: 100px;
 }
 
-.online .title {
+.home .title, .online .title {
     color: var(--color-text-primary);
     text-align: center;
 }
 
-.online .title p {
+.home .title p, .online .title p {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 620px;
@@ -376,7 +434,7 @@
 }
 
 .work {
-    padding: 0 1rem 3.25rem;
+    padding: 3.25rem 1rem;
     scroll-margin-top: 150px;
 }
 
@@ -586,6 +644,21 @@
     }
 
     .main-section {
+        margin-top: 0;
+    }
+
+    .services .grid {
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services .title {
+        grid-column-start: span 2;
+        justify-self: center;
+    }
+
+    .services .card + .card {
         margin-top: 0;
     }
 
