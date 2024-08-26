@@ -138,13 +138,13 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.home {
-    padding: 3.25rem 1rem;
+.intro {
+    padding: 4.25rem 1rem;
     scroll-margin-top: 100px;
     background-color: var(--color-secondary);
 }
 
-.home .btn {
+.intro .btn {
     background-color: var(--color-background);
     border: 2px solid var(--color-text-primary);
     border-radius: 8px;
@@ -154,12 +154,12 @@
     padding: 0 0.8em;
 }
 
-.home .btn:hover {
+.intro .btn:hover {
     background-color: var(--color-secondary);
 }
 
 .services {
-    padding: 3.25rem 1rem 0;
+    padding: 4.25rem 1rem;
 }
 
 .services .card {
@@ -171,14 +171,18 @@
     margin-top: 3.5rem;
 }
 
-.services .card img {
-    width: 30%;
-    height: auto;
+.services .img {
     margin: 2rem 0;
+    display: flex;
+    height: 165px;
+}
+
+.services .img img {
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .services .btn {
-    width: 75%;
     background-color: var(--color-secondary);
     border: 2px solid var(--color-text-primary);
     border-radius: 8px;
@@ -193,7 +197,47 @@
 }
 
 .reviews {
-    padding: 0 1rem 3.25rem;
+    padding: 4.25rem 1rem;
+}
+
+.reviews .btn {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: 0 0.8em;
+}
+
+.reviews .btn:hover {
+    background-color: var(--color-background);
+}
+
+.reviews .card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .5px solid var(--color-text-primary);
+    border-radius: 16px;
+}
+
+.reviews .card + .card {
+    margin-top: 3.5rem;
+}
+
+.reviews .description ul {
+    list-style-image: none;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.reviews .star {
+    width: 15px;
+    margin-bottom: .5rem;
+    margin-right: .125rem;
 }
 
 .about {
@@ -310,7 +354,7 @@
     background-repeat: repeat-x;
     background-size: contain;
     height: 3.25rem;
-    margin: 4em auto;
+    margin: 2em auto;
     position: relative;
 }
 
@@ -319,17 +363,25 @@
     scroll-margin-top: 100px;
 }
 
-.home .title, .online .title {
+.intro .title, .online .title {
     color: var(--color-text-primary);
     text-align: center;
 }
 
-.home .title p, .online .title p {
+.intro .title p, .online .title p {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 620px;
     margin: 0 auto;
     margin-bottom: 2.5rem;
+}
+
+.intro .title h1 {
+    line-height: 1.125;
+}
+
+.intro .title p {
+    max-width: 800px;
 }
 
 .online .card {
@@ -649,7 +701,7 @@
 
     .services .grid {
         row-gap: 1.5rem;
-        column-gap: 1.5rem;
+        column-gap: 4rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -659,6 +711,32 @@
     }
 
     .services .card + .card {
+        margin-top: 0;
+    }
+
+    .reviews .grid {
+        row-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .reviews .title {
+        grid-column-start: span 3;
+        justify-self: center;
+    }
+
+    .reviews .title h2 {
+        margin-bottom: 0;
+    }
+
+    .reviews .btn-container {
+        grid-column-start: span 3;
+        justify-self: center;
+        margin-bottom: 1.5em;
+    }
+
+    .reviews .card + .card {
         margin-top: 0;
     }
 
