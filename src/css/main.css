@@ -172,8 +172,9 @@
 }
 
 .services .img {
-    margin: 2rem 0;
     display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
     height: 165px;
 }
 
@@ -198,6 +199,10 @@
 
 .reviews {
     padding: 4.25rem 1rem;
+}
+
+.reviews .google {
+    width: 4rem;
 }
 
 .reviews .btn {
@@ -236,7 +241,7 @@
 
 .reviews .star {
     width: 15px;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     margin-right: .125rem;
 }
 
@@ -253,7 +258,10 @@
 .about .grid {
     gap: .875rem;
     grid-template-columns: 0 3fr 4fr;
+    /*
     grid-template-rows: 0 repeat(2, auto);
+    */
+    grid-template-rows: 0 auto;
 }
 
 .insta svg {
@@ -321,7 +329,10 @@
 
 .about .description {
     grid-column: 2/4;
+    /*
     grid-row-start: 3;
+    */
+    grid-row-start: 2;
     font-size: 1.1em;
     line-height: 1.6;
     margin-top: .5em;
@@ -359,7 +370,7 @@
 }
 
 .online {
-    padding: 3.25rem 1rem 0;
+    padding: 4.25rem 1rem;
     scroll-margin-top: 100px;
 }
 
@@ -382,6 +393,7 @@
 
 .intro .title p {
     max-width: 800px;
+    margin-bottom: 0;
 }
 
 .online .card {
@@ -438,7 +450,7 @@
 .online .img {
     margin: 2rem 1.5rem 2.5rem;
     display: flex;
-    height: 265px;
+    height: 200px;
 }
 
 .online .img img {
@@ -504,7 +516,7 @@
 
 .work .img {
     display: flex;
-    height: 265px;
+    height: 260px;
     grid-row-start: 1;
     grid-column: 1/3;
     transform: translate(-30px, 36px);
@@ -640,8 +652,10 @@
     }
 
     .about .orange-2 {
-        grid-row-start: 3;
+        grid-row-start: 2;
+        /*
         align-self: start;
+        */
         transform: translate(-30px, 100px);
     }
 
@@ -656,7 +670,9 @@
 
     .about .description {
         grid-column-start: 3;
+        /*
         margin-top: 0;
+        */
     }
 
     .work .title {
@@ -733,7 +749,9 @@
     .reviews .btn-container {
         grid-column-start: span 3;
         justify-self: center;
+        /*
         margin-bottom: 1.5em;
+        */
     }
 
     .reviews .card + .card {
