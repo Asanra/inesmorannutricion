@@ -400,7 +400,6 @@
 
 .intro .title p {
     max-width: 800px;
-    margin-bottom: 0;
 }
 
 .online .card {
@@ -454,6 +453,27 @@
     vertical-align: 14px;
 }
 
+.partner {
+    text-align: center;
+    padding: 1rem;
+}
+
+.partner .quantity {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-right: 1px;
+    vertical-align: baseline;
+}
+
+.partner .money {
+    font-size: 1.25em;
+    line-height: 1.2;
+}
+
+.online [data-card="gratuita"] .partner {
+    color: #fff;
+}
+
 .online .img {
     margin: 2rem 1.5rem 2.5rem;
     display: flex;
@@ -490,18 +510,26 @@
     margin: 2rem 0;
 }
 
-.online .description {
+.online .description, .services .description {
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+.online .description {
     max-width: 360px; 
 }
 
-.online .description p {
+.online .description p, .services .description p {
     margin-bottom: 1em;
 }
 
-.online .description ul {
+.online .description ul, .services .description ul {
     margin-top: 0;
+}
+
+.services .description ul {
+    padding-left: 25px;
+    margin-bottom: 2em;
 }
 
 .work {
