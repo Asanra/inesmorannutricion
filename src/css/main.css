@@ -140,7 +140,6 @@
 
 .intro {
     padding: 4.25rem 1rem;
-    scroll-margin-top: 100px;
     background-color: var(--color-secondary);
 }
 
@@ -248,7 +247,6 @@
 .about {
     background-color: var(--color-secondary);
     padding: 2rem 1rem 3.25rem;
-    scroll-margin-top: 100px;
 }
 
 .grid {
@@ -371,14 +369,15 @@
 
 .online, .service {
     padding: 4.25rem 1rem;
-    /*
-    scroll-margin-top: 100px;
-    */
 }
 
 .intro .title, .online .title, .service .title {
     color: var(--color-text-primary);
     text-align: center;
+}
+
+.service .title {
+    margin-bottom: 1.5rem;
 }
 
 .service .title h1 {
@@ -534,7 +533,6 @@
 
 .work {
     padding: 3.25rem 1rem;
-    scroll-margin-top: 150px;
 }
 
 .work .grid {
@@ -604,6 +602,46 @@
     transform: translate(50px, 46px);
     */
 }
+
+.service-item {
+    display: flex;
+    align-items: center;
+}
+
+.service-item + .service-item {
+    margin-top: 4rem;
+}
+
+.service-img {
+    flex: 0 1 50%;
+}
+
+.service-text {
+    flex: 0 1 50%;
+}
+
+.service-text h2 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+}
+
+.service-text ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    list-style-image: url(../img/naranja.svg);
+    padding-left: 25px;
+}
+
+.service-text ul h3 {
+    font-size: 1.375rem;
+    margin-bottom: .5em;
+}
+
+.service-text ul h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 .main-footer {
     background-color: var(--color-secondary);
@@ -776,6 +814,18 @@
     .service .service-items p {
         margin-bottom: 2.5em;
         padding: 0 20px;
+    }
+
+    [data-service="clinica"] .service-img {
+        order: 2;
+    }
+
+    [data-service="clinica"] .service-text {
+        order: 1;
+    }
+    
+    .service-text {
+        padding-right: 70px;
     }
 
     .contact p {
