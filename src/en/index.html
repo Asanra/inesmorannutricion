@@ -33,7 +33,7 @@
   <meta name="google-site-verification" content="Darz20V4vd7ryuzRWWuCPmZVdma1Hy2brHjV82_4su4" />
 </head>
 <body>
-    <section class="main-section" data-lan="EN">
+    <section class="main-section" data-lan="EN" data-page="../index.html">
         <header class="main-header">
             <div class="l-wrap flex alig-cent just-betw">
                 <div class="logo">
@@ -271,7 +271,12 @@
             </a>
         </div>
     </div>
+    <!-- a non-blocking javascript resource -->
+    <!-- build:js js/main.min.js-->
+    <script src="../js/common.js"></script>
+    <!-- endbuild -->
     <script>
+        /*
         // Comportamiento Burguer Menu
         let burger = '';
         function toggleMenu(obj) {
@@ -332,6 +337,8 @@
         // Actualizar year copyright
         let year = new Date();
         document.getElementById('year').innerHTML = year.getFullYear();
+        */
     </script>
+
 </body>
 </html>

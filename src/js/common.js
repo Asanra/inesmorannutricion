@@ -22,9 +22,10 @@ function openTab(tab) {
     localStorage.setItem('lan', tab); // Recordar el idioma seleccionado para prox. visitas
     let tabcontent = document.querySelector(".main-section");
     let lanContent = tabcontent.getAttribute('data-lan');
+    let page = tabcontent.getAttribute('data-page');
     if (lanContent != tab) {
         // Si no coincide el idioma seleccionado con la pagina => redirige
-        window.location.href = 'en/index.html';
+        window.location.href = page;
     }
 }
 
