@@ -55,6 +55,30 @@ function displayMore(lan) {
     }
 }
 
+// Comportamiento btn 'Leer más'
+function readMore(btn, lan) {
+    let txtMore = '';
+    let txtLess = '';
+    if (lan == 'ES') {
+        txtMore = 'Leer más';
+        txtLess = 'Menos';
+    } else {
+        txtMore = 'More';
+        txtLess = 'Less';
+    }
+    let containerBtn = btn.parentElement;
+    let moreTextBtn = containerBtn.previousElementSibling;
+    if (btn.getAttribute('data-btn') == 'more' && btn.getAttribute('data-lan') == lan) {
+        moreTextBtn.style.display = 'block';
+        btn.innerHTML = txtLess;
+        btn.setAttribute('data-btn', 'less');
+    } else if (btn.getAttribute('data-btn') == 'less' && btn.getAttribute('data-lan') == lan) {
+        moreTextBtn.style.display = 'none';
+        btn.innerHTML = txtMore;
+        btn.setAttribute('data-btn', 'more');
+    }
+}
+
 // Cargar idioma del navegador
 let lanDefault = 'es';
 let lanStorage = (localStorage.lan) ? localStorage.lan : '';

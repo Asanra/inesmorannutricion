@@ -483,9 +483,13 @@
     margin-bottom: 3.5rem;
 }
 
-.service h3::before {
+.service-card h3::before {
     content: url(../img/naranja.svg);
     margin-left: -20px;
+}
+
+.service-card .long {
+    display: none;
 }
 
 .service-card .btn {
