@@ -173,7 +173,7 @@
 .services .img {
     display: flex;
     justify-content: center;
-    margin: 2rem 0 1rem;
+    margin-bottom: 1rem;
     height: 165px;
 }
 
@@ -425,7 +425,7 @@
 
 .service .img {
     display: flex;
-    height: 150px;
+    height: 200px;
 }
 
 .service .img img {
@@ -435,11 +435,11 @@
 }
 
 .service [data-service="clinica"] .img img {
-    object-position: 0%;
+    object-position: 35%;
 }
 
 .service [data-service="deportiva"] .img img {
-    object-position: 5%;
+    object-position: -13%;
 }
 
 .service-item {
