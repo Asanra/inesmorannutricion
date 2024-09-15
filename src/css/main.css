@@ -55,7 +55,7 @@
     transition: all .275s;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, .main-nav .active {
     background-color: var(--color-background);
 }
 
@@ -477,6 +477,7 @@
 }
 
 .service-item {
+    scroll-margin-top: 100px;
     margin-top: 3.25rem;
 }
 
