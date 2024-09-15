@@ -157,7 +157,7 @@
     background-color: var(--color-secondary);
 }
 
-.services {
+.services, .reviews, .online, .service {
     padding: 4.25rem 1rem;
 }
 
@@ -194,10 +194,6 @@
 
 .services .btn:hover {
     background-color: var(--color-background);
-}
-
-.reviews {
-    padding: 4.25rem 1rem;
 }
 
 .reviews .google {
@@ -249,16 +245,9 @@
     padding: 2rem 1rem 3.25rem;
 }
 
-.grid {
-    display: grid;
-}
-
 .about .grid {
     gap: .875rem;
     grid-template-columns: 0 3fr 4fr;
-    /*
-    grid-template-rows: 0 repeat(2, auto);
-    */
     grid-template-rows: 0 auto;
 }
 
@@ -327,9 +316,6 @@
 
 .about .description {
     grid-column: 2/4;
-    /*
-    grid-row-start: 3;
-    */
     grid-row-start: 2;
     font-size: 1.1em;
     line-height: 1.6;
@@ -358,6 +344,46 @@
     background-color: var(--color-secondary);
 }
 
+.work {
+    padding: 3.25rem 1rem;
+}
+
+.work .grid {
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem 2.5rem;
+}
+
+.work .title {
+    grid-column: 1/3;
+    grid-row-start: 1;
+    color: var(--color-text-primary);
+}
+
+.work .img {
+    display: flex;
+    height: 260px;
+    grid-row-start: 1;
+    grid-column: 1/3;
+    transform: translate(-30px, 36px);
+}
+
+.work article {
+    grid-column: span 2;
+    grid-row-start: span 2;
+    margin-top: 1rem;
+}
+
+.work article h3 {
+    margin-bottom: .5em;
+}
+
+.work article p {
+    margin-bottom: 2.5em;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
 .separator {
     background-image: url(../img/naranja.svg);
     background-repeat: repeat-x;
@@ -365,10 +391,6 @@
     height: 3.25rem;
     margin: 2em auto;
     position: relative;
-}
-
-.online, .service {
-    padding: 4.25rem 1rem;
 }
 
 .intro .title, .online .title, .service .title {
@@ -400,6 +422,11 @@
 
 .intro .title p {
     max-width: 800px;
+}
+
+.services .description ul {
+    padding-left: 25px;
+    margin-bottom: 2em;
 }
 
 .service .card {
@@ -444,7 +471,6 @@
 
 .service-item {
     margin-top: 3.25rem;
-
 }
 
 .service-item h2 {
@@ -599,51 +625,6 @@
 
 .online .description ul, .services .description ul {
     margin-top: 0;
-}
-
-.services .description ul {
-    padding-left: 25px;
-    margin-bottom: 2em;
-}
-
-.work {
-    padding: 3.25rem 1rem;
-}
-
-.work .grid {
-    grid-template-columns: 3fr 5fr;
-    grid-template-rows: repeat(2, auto);
-    gap: 1.5rem 2.5rem;
-}
-
-.work .title {
-    grid-column: 1/3;
-    grid-row-start: 1;
-    color: var(--color-text-primary);
-}
-
-.work .img {
-    display: flex;
-    height: 260px;
-    grid-row-start: 1;
-    grid-column: 1/3;
-    transform: translate(-30px, 36px);
-}
-
-.work article {
-    grid-column: span 2;
-    grid-row-start: span 2;
-    margin-top: 1rem;
-}
-
-.work article h3 {
-    margin-bottom: .5em;
-}
-
-.work article p {
-    margin-bottom: 2.5em;
-    font-size: 1.1em;
-    line-height: 1.6;
 }
 
 .main-footer {
