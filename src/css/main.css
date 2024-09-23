@@ -265,7 +265,7 @@
 }
 
 .about .photo {
-    grid-column-start: 2;
+    grid-column: 2/4;
     grid-row-start: 2;
     justify-self: stretch;
     align-self: center;
@@ -288,8 +288,7 @@
 .about .orange-2 {
     grid-column-start: 2;
     grid-row-start: 2;
-    align-self: end;
-    transform: translate(-20px, -5px);
+    transform: translate(-20px, 30px);
 }
 
 .about .orange-1 img, .about .orange-2 img {
@@ -297,33 +296,9 @@
     height: 40px;
 }
 
-.about .intro {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    color: var(--color-text-primary);
-    align-self: center;
-}
-
-.about .intro h1 {
-    font-size: 1.875em;
-}
-
-.about .intro p {
-    font-size: 1.1em;
-    margin-bottom: 0;   
-}
-
-.about .intro a {
-    transition: all .275s;
-}
-
-.about .intro a:hover {
-    background-color: var(--color-background);
-}
-
 .about .description {
     grid-column: 2/4;
-    grid-row-start: 2;
+    grid-row-start: 3;
     font-size: 1.1em;
     line-height: 1.6;
     margin-top: .5em;
@@ -433,10 +408,6 @@
 
 .intro .title h1 {
     line-height: 1.125;
-}
-
-.intro .title p {
-    max-width: 800px;
 }
 
 .services .description ul {
@@ -754,7 +725,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 48em) {
-
+    
     .services .img {
         margin-bottom: 0;
     }
@@ -764,6 +735,7 @@
     }
 
     .about .photo {
+        grid-column: 2/3;
         grid-row: 2/4;
         justify-self: center;
         align-self: start;
@@ -775,11 +747,9 @@
     }
 
     .about .orange-2 {
-        grid-row-start: 2;
-        /*
-        align-self: start;
-        */
-        transform: translate(-30px, 100px);
+        grid-row-start: 1;
+        transform: translate(-30px, 350px);
+        align-self: end;
     }
 
     .about .orange-1 img, .about .orange-2 img {
@@ -787,15 +757,9 @@
         height: 60px;
     }
 
-    .about .intro p {
-        margin-bottom: .5em;
-    }
-
     .about .description {
         grid-column-start: 3;
-        /*
-        margin-top: 0;
-        */
+        grid-row-start: 2;
     }
 
     .work .title {
@@ -859,6 +823,10 @@
         margin-top: 0;
     }
 
+    .intro .title p, .online .title p, .service .title p {
+        max-width: 800px;
+    }
+
     .services .grid {
         row-gap: 1.5rem;
         column-gap: 4rem;
@@ -909,20 +877,12 @@
         gap: .875rem 2.5rem;
     }
 
-    .about .intro h1 {
-        font-size: 3rem;
-    }
-
-    .about .intro p {
-        margin-bottom: 1.5em;
-    }
-
     .about .orange-1 {
         transform: translate(-5px, 64px);
     }
 
     .about .orange-2 {
-        transform: translate(-50px, 100px);
+        transform: translate(-50px, 500px);
     }
 
     .about .orange-1 img, .about .orange-2 img {
