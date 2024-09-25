@@ -138,12 +138,12 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.intro {
+.intro, .talks {
     padding: 4.25rem 1rem;
     background-color: var(--color-secondary);
 }
 
-.intro .btn {
+.intro .btn, .talks .btn {
     background-color: var(--color-background);
     border: 2px solid var(--color-text-primary);
     border-radius: 8px;
@@ -153,12 +153,16 @@
     padding: 0 0.8em;
 }
 
-.intro .btn:hover {
+.intro .btn:hover, .talks .btn:hover {
     background-color: var(--color-secondary);
 }
 
-.services, .online, .service {
+.services, .online {
     padding: 4.25rem 1rem;
+}
+
+.services {
+    margin-bottom: 2rem;
 }
 
 .services .card {
@@ -199,6 +203,7 @@
 
 .reviews {
     padding: 3.25rem 1rem;
+    margin-top: 2rem;
 }
 
 .reviews .btn-google {
@@ -371,18 +376,18 @@
     background-repeat: repeat-x;
     background-size: contain;
     height: 3.25rem;
-    margin: 2em auto;
     position: relative;
 }
 
 .service .grid {
+    padding: 4.25rem 1rem;
     column-gap: 2rem;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
 
-.intro .title, .services .title, .reviews .title, .online .title, .service .title {
+.intro .title, .services .title, .talks .title, .reviews .title, .online .title, .service .title {
     color: var(--color-text-primary);
     text-align: center;
 }
@@ -398,7 +403,7 @@
     margin-bottom: 1em;
 }
 
-.intro .title p, .online .title p, .service .title p {
+.intro .title p, .talks .title p, .online .title p, .service .title p {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 620px;
@@ -466,6 +471,7 @@
 .service-item {
     scroll-margin-top: 100px;
     margin-top: 3.25rem;
+    padding: 4.25rem 1rem;
 }
 
 .service-item h2 {
@@ -823,7 +829,7 @@
         margin-top: 0;
     }
 
-    .intro .title p, .online .title p, .service .title p {
+    .intro .title p, .talks .title p, .online .title p, .service .title p {
         max-width: 800px;
     }
 
