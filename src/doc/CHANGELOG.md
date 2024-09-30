@@ -86,3 +86,8 @@ Historial de actualizaciones
 
 - Actualizados textos (Máster finalizado y precios de las consultas)
 - humans.txt -> Añadido Marcos al equipo de desarrollo
+
+
+###v2.4 (30/09/2024)
+
+- Rediseño de la web para contener más información
