@@ -579,6 +579,7 @@
 
 .online [data-card="gratuita"] .partner {
     color: #fff;
+    display: none;
 }
 
 .online .img {
@@ -914,12 +915,16 @@
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
         border-right: 0;
-    }
+    }    
 
     .online [data-card="seguimiento"] {
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
         border-left: 0;
+    }
+
+    .online [data-card="gratuita"] .partner {
+        display: block;
     }
 
     .online .card + .card {
