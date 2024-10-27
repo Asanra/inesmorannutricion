@@ -263,7 +263,7 @@
     grid-template-rows: 0 auto;
 }
 
-.insta svg {
+.rrss svg {
     vertical-align: middle;
     margin-top: -4px;
     margin-right: 4px;
@@ -854,7 +854,7 @@
     }
 
     .services .img {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .reviews .grid {
