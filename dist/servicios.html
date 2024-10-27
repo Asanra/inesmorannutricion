@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inés Morán Nutrición - Servicios</title>
+  <meta name="description" content="En mi consulta te guiaré en cada paso hacia una vida más equilibrada y consciente. Ya sea para mejorar tu rendimiento deportivo, alcanzar objetivos nutricionales o adoptar hábitos más saludables.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no"/>
+  
+  <link rel="icon" href="favicon.ico" sizes="any"><!-- 32×32 -->
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="app.webmanifest">
+
+  <link rel="stylesheet" href="css/main.min.css?t=1730026668283">
+  
+  <meta name="theme-color" content="#3D182F">
+
+  <meta http-equiv="Cache-Control" content="max-age=31536000, immutable"/>
+
+</head>
+<body>
+    <section class="main-section" data-lan="ES" data-page="en/what-i-do.html">
+        <header class="main-header">
+            <div class="l-wrap flex alig-cent just-betw">
+                <div class="logo">
+                    <a href="https://inesmorannutricion.com">
+                        <img src="img/inesmorannutricion.png" width="110" height="78" alt="Ir a inesmorannutricion.com">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="sobre-mi.html">Sobre mi</a></li>
+                        <li><a href="servicios.html" class="active">Servicios</a></li>
+                        <li><a href="consulta-online.html">Consulta online</a></li>
+                        <li class="btn"><a href="#contactame">Contáctame</a></li>
+                        <li><a href="javascript:void(0);" onclick="openTab('EN');">EN</a></li>
+                    </ul>
+                </nav>
+                <div class="container-menu" onclick="toggleMenu(this);">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>
+                </div>
+            </div>
+            <div class="menu-toggle change">
+                <div class="l-wrap flex alig-cent just-end">
+                    <div class="container-menu" onclick="toggleMenu(this);">
+                        <div class="item1"></div>
+                        <div class="item2"></div>
+                        <div class="item3"></div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="sobre-mi.html">Sobre mi</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="consulta-online.html">Consulta online</a></li>
+                        <li class="btn"><a href="javascript:void(0);" data-ref="#contactame">Contáctame</a></li>
+                        <li><a href="javascript:void(0);" data-ref="openTab('EN');">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">        
+            <section class="service">
+                <div class="l-wrap grid">
+                    <div class="title">
+                        <h1>Servicios</h1>
+                        <p>En mi consulta te guiaré en cada paso hacia una vida más equilibrada y consciente. Ya sea para mejorar tu rendimiento deportivo, alcanzar objetivos nutricionales o adoptar hábitos más saludables.</p>
+                    </div>
+                    <a href="#nutricion-clinica" data-service="clinica">
+                        <div class="card">
+                            <h2>Nutrición clínica</h2>
+                            <div class="img">
+                                <img src="img/nutricion-clinica.svg" height="200" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#nutricion-deportiva" data-service="deportiva">
+                        <div class="card">
+                            <h2>Nutrición deportiva</h2>
+                            <div class="img">
+                                <img src="img/nutricion-deportiva.svg" height="200" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="separator"></div>
+                <section class="talks">
+                    <div class="l-wrap flex flex-colu flex-cent">
+                        <div class="title">
+                            <h3>
+                                Charlas, formaciones y contenido
+                            </h3>
+                            <p>
+                                ¿Necesitas un invitado para tu <span class="is-overlined">podcast</span>, un conferenciante para una <span class="is-overlined">charla</span> o un profesional para una <span class="is-overlined">formación</span>? Me encantará compartir mis experiencias y conocimientos en persona u online.
+                            </p>
+                            <button class="btn" onclick="window.location.href='#contactame'">Contáctame para tu evento</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="separator"></div>
+                <div id="nutricion-clinica" class="l-wrap service-item">
+                    <h2>Nutrición Clínica</h2>
+                    <div class="row">
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Educación nutricional</h3>
+                            <p>Mi enfoque se centra en empoderarte a través del conocimiento nutricional. Mediante sesiones personalizadas te guiaré a través de los conceptos fundamentales de la nutrición y te ayudaré a comprender cómo tu alimentación afecta a tu bienestar en general.</p>
+                            <div class="long">
+                                <p>Juntos exploraremos tus metas individuales y diseñaremos estrategias prácticas para incorporar hábitos alimentarios saludables en tu vida cotidiana. Mi objetivo es que te conviertas en un experto de tu propia alimentación, tomando decisiones informadas, que te beneficien a largo plazo.</p>              
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Cambio de hábitos alimentarios</h3>
+                            <p>Querer transformar tus hábitos alimenticios puede ser el primer paso hacia una vida más plena y saludable. El servicio de mejora de hábitos alimentarios se centra en cultivar cambios duraderos a través de un enfoque gradual y realista.</p>
+                            <div class="long">
+                                <p>Juntos exploraremos tus preferencias, desafíos y metas para crear un plan personalizado que se adapte a tu estilo de vida único. Te brindaré las herramientas y el apoyo necesarios para construir una relación positiva con la comida y lograr un equilibrio nutricional, que te permita sentirte energizado y revitalizado.</p>                                
+                                <p>Este servicio puede llevar como consecuencia un cambio físico según nuestro objetivo: pérdida o ganancia de peso. Sin embargo, la finalidad principal seguirá siendo siempre el mantenimiento de unos hábitos saludables a largo plazo.</p>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Alimentación vegetariana o vegana</h3>
+                            <p>Explora un enfoque de alimentación equilibrada y nutritiva a través del servicio de alimentación vegetariana o vegana. Te ofrezco una perspectiva en la que cada elección alimentaria es válida y tiene su lugar en un estilo de vida saludable.</p>
+                            <div class="long">
+                                <p>Si estás interesado en incorporar más opciones a tu alimentación basadas en plantas o en hacer la transición completa, te guiaré con un enfoque integral hacia tus objetivos individuales. Juntos exploraremos una variedad de platos y recetas que no solo nutrirán tu cuerpo, sino que también te sorprenderán con su sabor y versatilidad.</p>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-wrap separator"></div>
+                <div id="nutricion-deportiva" class="l-wrap service-item">
+                    <h2>Nutrición Deportiva</h2>
+                    <div class="row">
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Mejora del rendimiento deportivo</h3>
+                            <p>La búsqueda de un rendimiento óptimo va de la mano de una nutrición estratégica y un entrenamiento nutricional. El servicio de mejora del rendimiento se enfoca en potenciar tus habilidades atléticas a través de una nutrición personalizada.</p>
+                            <div class="long">
+                                <p>Trabajaremos juntos para diseñar un plan nutricional que optimice tu energía, permita una recuperación efectiva y maximice tus resultados. Desde la elección de alimentos antes y después del entrenamiento, hasta la hidratación adecuada, te proporcionaré las herramientas nutricionales que necesitas para alcanzar tus metas deportivas con confianza.</p>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Educación nutricional en el deporte</h3>
+                            <p>Mi enfoque combina la educación nutricional, con estrategias específicas para optimizar tu rendimiento deportivo. A través de sesiones personalizadas, te guiaré en la comprensión profunda de cómo la alimentación influye en tu rendimiento y en tu capacidad dentro de tu disciplina deportiva.</p>
+                            <div class="long">
+                                <p>Exploraremos los conceptos clave de la nutrición y, además, profundizaremos en temas como suplementación deportiva, estrategias nutricionales para la competición y el entrenamiento nutricional. Juntos, diseñaremos planes prácticos que te permitan aprovechar al máximo tu potencial atlético y familiarizarte con la nutrición deportiva. Mi objetivo, es que tomes decisiones informadas y estratégicas para potenciar tus resultados deportivos a largo plazo.</p>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4 service-card">
+                            <h3>Nutrición en competición</h3>
+                            <p>En el emocionante escenario de la competición, cada detalle cuenta. El servicio de nutrición en competiciones está diseñado para brindarte la ventaja que necesitas en tus eventos deportivos más importantes.</p>
+                            <div class="long">
+                                <p>Trabajaremos juntos en estrategias nutricionales específicas para antes, durante y después de la competición, garantizando que estés en tu mejor forma cuando más importa. Desde la carga de carbohidratos hasta la hidratación precisa y la recuperación eficaz. Te proporcionaré las herramientas y el conocimiento necesario para optimizar tu rendimiento en el día y durante el evento. Mi objetivo es que compitas con confianza y con tus depósitos de energía a rebosar.</p>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="readMore(this, 'ES')" data-btn="more" data-lan="ES">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="contactame" class="main-footer">
+            <div class="l-wrap contact">
+                <div class="flex flex-colu flex-cent">
+                    <h2>Contáctame</h2>
+                    <p class="text-alig-c claim">
+                        Si estás pensando en dar un paso nuevo en tu vida,
+                        <br>
+                        ¡No dudes en contactar conmigo!
+                    </p>
+                    <p>
+                        <a href="mailto:info@inesmorannutricion.com?Subject=Hola!" class="rrss">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 -960 960 960">
+                                <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                            </svg>
+                            <span>info@inesmorannutricion.com</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/inesmoran.nutricion/" class="rrss">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
+                                <g>
+                                    <path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1-14 14-22.6 28.1-29.1 44.6-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6 14 14 28.1 22.6 44.6 29.1 16 6.2 34.3 10.5 61.2 11.7 26.9 1.2 35.4 1.5 103.9 1.5s77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1 14-14 22.6-28.1 29.1-44.6 6.2-16 10.5-34.3 11.7-61.2 1.2-26.9 1.5-35.4 1.5-103.9s-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6-14-14-28.1-22.6-44.6-29.1-16-6.2-34.3-10.5-61.2-11.7-27-1.1-35.6-1.4-104-1.4z"></path>
+                                    <path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4zm0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84z"></path>
+                                    <circle cx="390.5" cy="121.5" r="30.2"></circle>
+                                </g>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="copyright-footer">
+        <div class="l-wrap flex flex-cent">
+            <p>&copy;&nbsp;<span id="year"></span> Inés Morán Nutrición</p>
+        </div>
+    </div>
+    <div class="whatsapp-launcher">
+        <div class="whatsapp-launcher-icon">
+            <a href="https://wa.me/447354241321/?text=Hola%21%20Me%20gustar%C3%ADa%20conocer%20un%20poco%20c%C3%B3mo%20trabajas%20%3A%29%20Mi%20objetivo%20principal%20es%20">
+                <img src="img/whatsapp_icon.svg" width="48" height="48" alt="Enviar mensaje a Inés Morán Nutrición por WhatsApp">
+            </a>
+        </div>
+    </div>
+    <!-- a non-blocking javascript resource -->
+    <script src="js/main.min.js?t=1730026668283"></script>
+</body>
+</html>
