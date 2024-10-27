@@ -91,3 +91,10 @@ Historial de actualizaciones
 ###v2.4 (30/09/2024)
 
 - Rediseño de la web para contener más información
+
+
+###v2.5 (27/10/2024)
+
+- Apartado Contacto -> Añadido icono para email
+- Apartado Reviews -> Actualizado con nueva review
+- Pequeñas modificaciones CSS
