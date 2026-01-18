@@ -98,3 +98,9 @@ Historial de actualizaciones
 - Apartado Contacto -> Añadido icono para email
 - Apartado Reviews -> Actualizado con nueva review
 - Pequeñas modificaciones CSS
+
+
+###v2.6 (18/01/2026)
+
+- Apartado Consulta Online -> Precios actualizados
+- Modificado lógica de la redirección, ahora únicamente para aquellos usuarios que tengan el idioma recordado de anteriores visitas
