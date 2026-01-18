@@ -81,20 +81,13 @@ function readMore(btn, lan) {
 }
 
 // Cargar idioma del navegador
-let lanDefault = 'es';
 let lanStorage = (localStorage.lan) ? localStorage.lan : '';
 let lan = '';
-if (lanStorage == '') {
-    // Si no tiene idioma en localStorage detecta el del navegador
-    let lanNavigator = navigator.language;
-    lanNavigator = lanNavigator.substring(0,2);
-    lan = (lanNavigator == 'en') ? lanNavigator : lanDefault; // Si idioma navegador no es English siempre se carga en Español
-    lan = lan.toUpperCase();
-} else {
+if (lanStorage != '') {
     // Si tiene idioma almacenado en localStorage lo carga
     lan = lanStorage;
+    openTab(lan);
 }
-openTab(lan);
 
 // Actualizar year copyright
 let year = new Date();
